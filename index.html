@@ -241,8 +241,20 @@ function render(){
  }
  lastSoundState=JSON.parse(JSON.stringify(state));
  $("roomTag").textContent="ROOM "+room;
+ const names=Array.isArray(state.teamNames)?[
+  cleanTeamName(state.teamNames[0],"Team 1"),
+  cleanTeamName(state.teamNames[1],"Team 2")
+ ]:["Team 1","Team 2"];
  if(role==="host"){
   $("hostCode").textContent=room;
+  if(document.activeElement!==$("teamName1"))$("teamName1").value=names[0];
+  if(document.activeElement!==$("teamName2"))$("teamName2").value=names[1];
+  $("hostTeamLabel1").textContent=names[0].toUpperCase();
+  $("hostTeamLabel2").textContent=names[1].toUpperCase();
+  $("team1").textContent=names[0]+" Turn";
+  $("team2").textContent=names[1]+" Turn";
+  const adjust=$("adjustTeam");
+  if(adjust.options.length>=2){adjust.options[0].text=names[0];adjust.options[1].text=names[1];}
   $("hostStatus").textContent=`Round ${state.roundIndex+1} • ${state.screen==="intro"?"Round intro displayed":state.screen==="final"?"Game complete":`Question ${state.questionIndex+1} loaded`}`;
   $("hostScore1").textContent=state.scores?.[0]||0;$("hostScore2").textContent=state.scores?.[1]||0;
   const strikes=Math.max(0,Math.min(3,state.strikes||0));$("hostStrikeCount").textContent=Array.from({length:3},(_,i)=>i<strikes?"✕":"—").join(" ");$("hostStrikeLabel").textContent=`${strikes} of 3`;
