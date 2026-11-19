@@ -39,6 +39,7 @@ input,select{padding:11px;border-radius:10px;border:1px solid #9eadd0;background
 .answertext{background:#fff7df;color:#13244b;border-radius:14px;padding:18px;font-size:clamp(18px,2vw,26px);font-weight:800;line-height:1.35}
 .hostkey{margin-top:16px;background:#fff6dc;color:#10234a;border-radius:14px;padding:14px}
 .hostkey h3{margin:0 0 10px;color:#10234a}
+.hostdirectanswer{background:#fff;border:1px solid #c9b66e;border-radius:10px;padding:13px 15px;color:#10234a;font-size:18px;font-weight:900;line-height:1.4}
 .hostanswerrow{display:flex;gap:8px;margin:7px 0;align-items:stretch}
 .hostanswer{display:flex;flex:1;align-items:center;justify-content:space-between;gap:10px;background:#fff;border:1px solid #c9b66e;border-radius:9px;padding:9px 11px;color:#10234a;text-align:left;box-shadow:none}
 .hostanswer.revealed{background:#dff5e9;border-color:#22a06b}
@@ -283,8 +284,12 @@ function render(){
    });
   }else $("hostAnswerKey").classList.add("hidden");
  }else{
-  if(role==="host")$("hostAnswerKey").classList.add("hidden");
-  board.innerHTML="";if(state.answerShown){written.textContent=q.answer;written.classList.remove("hidden")}else{written.textContent="";written.classList.add("hidden")}
+  board.innerHTML="";
+  if(role==="host"){
+   $("hostAnswerKey").classList.remove("hidden");
+   $("hostAnswerList").innerHTML=`<div class="hostdirectanswer"><span style="display:block;font-size:12px;letter-spacing:.5px;color:#8a6500;margin-bottom:5px">CORRECT ANSWER — HOST ONLY</span>${escapeHtml(q.answer||"No answer was supplied for this question.")}</div>`;
+  }else $("hostAnswerKey").classList.add("hidden");
+  if(state.answerShown){written.textContent=q.answer;written.classList.remove("hidden")}else{written.textContent="";written.classList.add("hidden")}
  }
 }
 function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
