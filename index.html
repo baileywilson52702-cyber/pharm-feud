@@ -72,7 +72,11 @@ footer{text-align:center;color:#aebfe0;padding:20px;font-size:12px}
 <button id="revealAll" class="secondary">Reveal All / Answer</button><button id="strike" class="danger">Add Strike ✕</button><button id="clearStrikes" class="secondary">Clear Strikes</button>
 <button id="team1">Team 1 Turn</button><button id="team2" class="secondary">Team 2 Turn</button><button id="resetScores" class="danger">Reset Scores</button>
 </div>
-<div class="row" style="margin-top:14px"><button id="nextRound" class="secondary">Next Round Intro →</button><button id="copyCode" class="secondary">Copy Room Code</button></div>
+<div class="row" style="margin-top:14px;justify-content:space-between">
+ <div class="row"><strong>LIVE SCORE:</strong><span class="pill">TEAM 1: <b id="hostScore1">0</b></span><span class="pill">TEAM 2: <b id="hostScore2">0</b></span></div>
+ <div class="row"><button id="undoAction" class="secondary">↶ Undo Last Action</button><button id="nextRound" class="secondary">Next Round Intro →</button><button id="copyCode" class="secondary">Copy Room Code</button></div>
+</div>
+<div class="notice" id="completionStatus">Question status: waiting for a question.</div>
 <div id="hostAnswerKey" class="hostkey hidden"><h3>HOST ANSWER KEY — reveal the answer students guessed</h3><p style="margin:0 0 10px">Use Reveal to show an answer. Use Award to give that answer’s listed points to the team whose turn it is.</p><div id="hostAnswerList"></div></div>
 <div class="row" style="margin-top:12px"><label for="customPoints" style="font-weight:800">Custom points:</label><input id="customPoints" type="number" min="0" step="1" value="5" style="width:100px"><button id="awardCustom">Award Custom Points</button></div>
 <div class="adjustrow"><strong>Score correction:</strong><select id="adjustTeam"><option value="0">Team 1</option><option value="1">Team 2</option></select><input id="adjustAmount" type="number" step="1" value="5"><button id="addAdjustment">+ Add</button><button id="subtractAdjustment" class="danger">− Subtract</button></div>
@@ -103,7 +107,7 @@ footer{text-align:center;color:#aebfe0;padding:20px;font-size:12px}
 <script src="firebase-config.js"></script>
 <script>
 const $=id=>document.getElementById(id);
-let rounds=[],db=null,room="",role="",state=null,unsubscribe=null;
+let rounds=[],db=null,room="",role="",state=null,unsubscribe=null,undoStack=[];
 const cfg=window.PHARM_FEUD_FIREBASE_CONFIG||{};
 const configured=cfg.apiKey && cfg.databaseURL && cfg.projectId;
 if(configured){firebase.initializeApp(cfg);firebase.auth().signInAnonymously().then(()=>{db=firebase.database();$("configWarning").classList.add("hidden")}).catch(e=>alert("Firebase sign-in error: "+e.message))}
@@ -137,7 +141,19 @@ async function joinRoom(){
  role="audience";$("roomTag").textContent="ROOM "+room;subscribe();show("audience");
 }
 $("createHost").onclick=createRoom;$("joinAudience").onclick=joinRoom;
-function update(patch){if(role!=="host"||!db)return;state={...state,...patch,updated:Date.now()};db.ref("rooms/"+room).set(state)}
+function update(patch){
+ if(role!=="host"||!db)return;
+ if(state)undoStack.push(JSON.parse(JSON.stringify(state)));
+ if(undoStack.length>50)undoStack.shift();
+ state={...state,...patch,updated:Date.now()};
+ db.ref("rooms/"+room).set(state);
+}
+$("undoAction").onclick=()=>{
+ if(!undoStack.length){alert("There is no action to undo yet.");return}
+ const previous=undoStack.pop();
+ state={...previous,updated:Date.now()};
+ db.ref("rooms/"+room).set(state);
+};
 function current(){return rounds[state.roundIndex]?.questions[state.questionIndex]}
 function intro(i){update({screen:"intro",roundIndex:i,questionIndex:0,revealed:0,revealedAnswers:[],answerShown:false,strikes:0})}
 $("showRound").onclick=()=>intro(+$("roundSelect").value);
@@ -159,7 +175,11 @@ $("copyCode").onclick=()=>navigator.clipboard?.writeText(room);
 function render(){
  if(!state)return;
  $("roomTag").textContent="ROOM "+room;
- if(role==="host"){$("hostCode").textContent=room;$("hostStatus").textContent=`Round ${state.roundIndex+1} • ${state.screen==="intro"?"Round intro displayed":`Question ${state.questionIndex+1} loaded`}`}
+ if(role==="host"){
+  $("hostCode").textContent=room;
+  $("hostStatus").textContent=`Round ${state.roundIndex+1} • ${state.screen==="intro"?"Round intro displayed":state.screen==="final"?"Game complete":`Question ${state.questionIndex+1} loaded`}`;
+  $("hostScore1").textContent=state.scores?.[0]||0;$("hostScore2").textContent=state.scores?.[1]||0;
+}
  $("roundIntro").classList.toggle("hidden",state.screen!=="intro");
  $("liveGame").classList.toggle("hidden",state.screen==="intro"||state.screen==="final");
  $("finalScreen").classList.toggle("hidden",state.screen!=="final");
@@ -170,7 +190,15 @@ function render(){
  document.querySelectorAll(".scorebox").forEach((el,i)=>el.classList.toggle("active",i===(state.team||0)));
  $("team1").classList.toggle("activeTeam",(state.team||0)===0);$("team2").classList.toggle("activeTeam",(state.team||0)===1);
  $("strikeCount").textContent="✕ ".repeat(state.strikes||0)||"— — —";$("turnText").textContent=`Team ${(state.team||0)+1}'s turn`;
- const q=current();if(!q){$("hostAnswerKey").classList.add("hidden");$("hostQuestionPreview").textContent="Round introduction is displayed.";return;}
+ const q=current();if(!q){
+  $("hostAnswerKey").classList.add("hidden");$("hostQuestionPreview").textContent="Round introduction is displayed.";
+  if(role==="host")$("completionStatus").textContent="Question status: round introduction.";
+  return;
+ }
+ if(role==="host"){
+  const complete=q.type==="feud"?(state.revealedAnswers||[]).length>=q.answers.length:!!state.answerShown;
+  $("completionStatus").textContent=complete?"✓ QUESTION COMPLETE — all answers have been revealed.":"Question status: in progress.";
+ }
  $("categoryTag").textContent=q.type==="feud"?"FAMILY FEUD BOARD":q.type==="application"?"APPLICATION QUESTION":"BUZZER QUESTION";
  $("questionCount").textContent=`ROUND ${r.number} • QUESTION ${state.questionIndex+1} OF ${r.questions.length}`;
  $("questionText").textContent=q.question;
