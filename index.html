@@ -86,6 +86,7 @@ footer{text-align:center;color:#aebfe0;padding:20px;font-size:12px}
 </div>
 </section>
 <section id="audience" class="hidden">
+<div class="row" style="justify-content:flex-end;margin:8px 0 14px"><button class="secondary" id="audienceSoundToggle" type="button">🔇 Enable Sound</button></div>
 <div id="roundIntro" class="panel hero hidden"><div class="roundnum" id="roundNum">ROUND 1</div><div class="roundtitle" id="roundTitle">MALE REPRODUCTIVE DRUGS</div><div class="sub">PHARMACOLOGY FAMILY FEUD</div></div>
 <div id="finalScreen" class="panel hero hidden"><div class="roundnum">GAME OVER</div><div class="roundtitle" id="winnerTitle">FINAL SCORES</div><div class="sub" id="finalScores"></div></div>
 <div id="liveGame" class="gamegrid">
@@ -136,11 +137,15 @@ function playSound(kind){
  if(kind==="round"){tone(523,0,.22,"triangle",.1);tone(659,.17,.22,"triangle",.1);tone(784,.34,.28,"triangle",.12);tone(1047,.58,.55,"triangle",.13)}
  if(kind==="win"){tone(523,0,.2,"triangle",.1);tone(659,.16,.2,"triangle",.1);tone(784,.32,.2,"triangle",.12);tone(1047,.48,.8,"triangle",.14)}
 }
-$("soundToggle").onclick=()=>{
+function toggleSound(){
  soundEnabled=!soundEnabled;
- if(soundEnabled){ensureAudio();$("soundToggle").textContent="🔊 Sound On";playSound("answer")}
- else $("soundToggle").textContent="🔇 Enable Sound";
-};
+ if(soundEnabled){ensureAudio();playSound("answer")}
+ $("soundToggle").textContent=soundEnabled?"🔊 Sound On":"🔇 Enable Sound";
+ const audienceButton=$("audienceSoundToggle");
+ if(audienceButton)audienceButton.textContent=soundEnabled?"🔊 Sound On":"🔇 Enable Sound";
+}
+$("soundToggle").onclick=toggleSound;
+$("audienceSoundToggle").onclick=toggleSound;
 let rounds=[],db=null,room="",role="",state=null,unsubscribe=null,undoStack=[];
 const cfg=window.PHARM_FEUD_FIREBASE_CONFIG||{};
 const configured=cfg.apiKey && cfg.databaseURL && cfg.projectId;
