@@ -137,9 +137,16 @@ function playSound(kind){
  if(kind==="round"){tone(523,0,.22,"triangle",.1);tone(659,.17,.22,"triangle",.1);tone(784,.34,.28,"triangle",.12);tone(1047,.58,.55,"triangle",.13)}
  if(kind==="win"){tone(523,0,.2,"triangle",.1);tone(659,.16,.2,"triangle",.1);tone(784,.32,.2,"triangle",.12);tone(1047,.48,.8,"triangle",.14)}
 }
-function toggleSound(){
+async function toggleSound(){
  soundEnabled=!soundEnabled;
- if(soundEnabled){ensureAudio();playSound("answer")}
+ if(soundEnabled){
+  const ok=ensureAudio();
+  if(ok && audioContext.state==="suspended"){
+   try{await audioContext.resume()}catch(e){console.warn("Audio could not start",e)}
+  }
+  // Play a confirmation chime only after iOS Safari has resumed the audio context.
+  if(ok && audioContext.state==="running")playSound("answer");
+ }
  $("soundToggle").textContent=soundEnabled?"🔊 Sound On":"🔇 Enable Sound";
  const audienceButton=$("audienceSoundToggle");
  if(audienceButton)audienceButton.textContent=soundEnabled?"🔊 Sound On":"🔇 Enable Sound";
