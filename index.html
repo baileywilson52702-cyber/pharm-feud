@@ -23,6 +23,12 @@ input,select{padding:11px;border-radius:10px;border:1px solid #9eadd0;background
 .hostcontrols{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:16px}.hostcontrols button{padding:10px 8px}
 .hostbar{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}.hostbar select{flex:1;min-width:170px}
 .answertext{background:#fff7df;color:#13244b;border-radius:14px;padding:18px;font-size:clamp(18px,2vw,26px);font-weight:800;line-height:1.35}
+.hostkey{margin-top:16px;background:#fff6dc;color:#10234a;border-radius:14px;padding:14px}
+.hostkey h3{margin:0 0 10px;color:#10234a}
+.hostanswer{display:flex;align-items:center;justify-content:space-between;gap:10px;background:#fff;border:1px solid #c9b66e;border-radius:9px;padding:9px 11px;margin:7px 0;color:#10234a;text-align:left;box-shadow:none;width:100%}
+.hostanswer.revealed{background:#dff5e9;border-color:#22a06b}
+.hostanswer small{font-weight:800;color:#8a6500;white-space:nowrap}
+
 .notice{background:#ffffff12;border:1px solid #ffffff35;border-radius:12px;padding:12px;margin-top:12px;color:#dce8ff}
 footer{text-align:center;color:#aebfe0;padding:20px;font-size:12px}
 @media(max-width:800px){.gamegrid{grid-template-columns:1fr}.side{grid-template-columns:repeat(3,1fr)}.hostcontrols{grid-template-columns:repeat(2,1fr)}.board{grid-template-columns:1fr}}
@@ -51,6 +57,7 @@ footer{text-align:center;color:#aebfe0;padding:20px;font-size:12px}
 <button id="award20">Award 20 Points</button><button id="award30">Award 30 Points</button><button id="resetScores" class="danger">Reset Scores</button>
 </div>
 <div class="row" style="margin-top:14px"><button id="nextRound" class="secondary">Next Round Intro →</button><button id="copyCode" class="secondary">Copy Room Code</button></div>
+<div id="hostAnswerKey" class="hostkey hidden"><h3>HOST ANSWER KEY — click the answer students guessed</h3><div id="hostAnswerList"></div></div>
 </div>
 </section>
 <section id="audience" class="hidden">
@@ -99,7 +106,7 @@ function subscribe(){
  const cb=s=>{if(!s.exists()){alert("Room not found. Check the code.");return}state=s.val();render()};
  ref.on("value",cb);unsubscribe=()=>ref.off("value",cb);
 }
-function baseState(){return {screen:"intro",roundIndex:0,questionIndex:0,revealed:0,answerShown:false,strikes:0,scores:[0,0],team:0,updated:Date.now()}}
+function baseState(){return {screen:"intro",roundIndex:0,questionIndex:0,revealed:0,revealedAnswers:[],answerShown:false,strikes:0,scores:[0,0],team:0,updated:Date.now()}}
 async function createRoom(){
  if(!db){alert("Firebase is not configured yet. Complete the setup steps in README.md.");return}
  room=code();role="host";state=baseState();
@@ -113,13 +120,13 @@ async function joinRoom(){
 $("createHost").onclick=createRoom;$("joinAudience").onclick=joinRoom;
 function update(patch){if(role!=="host"||!db)return;state={...state,...patch,updated:Date.now()};db.ref("rooms/"+room).set(state)}
 function current(){return rounds[state.roundIndex]?.questions[state.questionIndex]}
-function intro(i){update({screen:"intro",roundIndex:i,questionIndex:0,revealed:0,answerShown:false,strikes:0})}
+function intro(i){update({screen:"intro",roundIndex:i,questionIndex:0,revealed:0,revealedAnswers:[],answerShown:false,strikes:0})}
 $("showRound").onclick=()=>intro(+$("roundSelect").value);
-$("loadQuestion").onclick=()=>{const ri=+$("roundSelect").value,qi=+$("questionSelect").value;update({screen:"question",roundIndex:ri,questionIndex:qi,revealed:0,answerShown:false,strikes:0})};
+$("loadQuestion").onclick=()=>{const ri=+$("roundSelect").value,qi=+$("questionSelect").value;update({screen:"question",roundIndex:ri,questionIndex:qi,revealed:0,revealedAnswers:[],answerShown:false,strikes:0})};
 $("nextRound").onclick=()=>intro(Math.min(rounds.length-1,(state?.roundIndex||0)+1));
-$("nextQ").onclick=()=>{let ri=state.roundIndex,qi=state.questionIndex+1;if(qi>=rounds[ri].questions.length){if(ri<rounds.length-1){intro(ri+1);$("roundSelect").value=ri+1;updateQuestionOptions()}return}update({screen:"question",questionIndex:qi,revealed:0,answerShown:false,strikes:0});$("roundSelect").value=ri;$("questionSelect").value=qi};
-$("prevQ").onclick=()=>{let qi=Math.max(0,state.questionIndex-1);update({screen:"question",questionIndex:qi,revealed:0,answerShown:false,strikes:0});$("roundSelect").value=state.roundIndex;$("questionSelect").value=qi};
-$("reveal").onclick=()=>{const q=current();if(!q)return;if(q.type==="feud")update({revealed:Math.min(q.answers.length,state.revealed+1)});else update({answerShown:true})};
+$("nextQ").onclick=()=>{let ri=state.roundIndex,qi=state.questionIndex+1;if(qi>=rounds[ri].questions.length){if(ri<rounds.length-1){intro(ri+1);$("roundSelect").value=ri+1;updateQuestionOptions()}return}update({screen:"question",questionIndex:qi,revealed:0,revealedAnswers:[],answerShown:false,strikes:0});$("roundSelect").value=ri;$("questionSelect").value=qi};
+$("prevQ").onclick=()=>{let qi=Math.max(0,state.questionIndex-1);update({screen:"question",questionIndex:qi,revealed:0,revealedAnswers:[],answerShown:false,strikes:0});$("roundSelect").value=state.roundIndex;$("questionSelect").value=qi};
+$("reveal").onclick=()=>{const q=current();if(!q)return;if(q.type==="feud"){const shown=[...(state.revealedAnswers||[])];const next=q.answers.findIndex((a,i)=>!shown.includes(i));if(next>=0){shown.push(next);update({revealedAnswers:shown,revealed:shown.length})}}else update({answerShown:true})};
 $("revealAll").onclick=()=>{const q=current();if(!q)return;update(q.type==="feud"?{revealed:q.answers.length}:{answerShown:true})};
 $("strike").onclick=()=>update({strikes:Math.min(3,(state.strikes||0)+1)});
 $("clearStrikes").onclick=()=>update({strikes:0});
@@ -137,14 +144,21 @@ function render(){
  $("roundNum").textContent="ROUND "+r.number;$("roundTitle").textContent=r.title.toUpperCase();
  $("score1").textContent=state.scores?.[0]||0;$("score2").textContent=state.scores?.[1]||0;
  $("strikeCount").textContent="✕ ".repeat(state.strikes||0)||"— — —";$("turnText").textContent=`Team ${(state.team||0)+1}'s turn`;
- const q=current();if(!q)return;
+ const q=current();if(!q){$("hostAnswerKey").classList.add("hidden");return;}
  $("categoryTag").textContent=q.type==="feud"?"FAMILY FEUD BOARD":q.type==="application"?"APPLICATION QUESTION":"BUZZER QUESTION";
  $("questionCount").textContent=`ROUND ${r.number} • QUESTION ${state.questionIndex+1} OF ${r.questions.length}`;
  $("questionText").textContent=q.question;
  const board=$("answerBoard"),written=$("writtenAnswer");board.innerHTML="";written.classList.add("hidden");
  if(q.type==="feud"){
-  q.answers.forEach((a,i)=>{const open=i<(state.revealed||0);const div=document.createElement("div");div.className="answer "+(!open?"closed":"");div.innerHTML=open?`<span>${i+1}. ${escapeHtml(a.text)}</span><span class="pts">${a.points}</span>`:`<span>${i+1}. &nbsp; ? ? ?</span>`;board.appendChild(div)});
+  const shown=state.revealedAnswers||[];
+  q.answers.forEach((a,i)=>{const open=shown.includes(i);const div=document.createElement("div");div.className="answer "+(!open?"closed":"");div.innerHTML=open?`<span>${i+1}. ${escapeHtml(a.text)}</span><span class="pts">${a.points}</span>`:`<span>${i+1}. &nbsp; ? ? ?</span>`;board.appendChild(div)});
+  if(role==="host"){
+   $("hostAnswerKey").classList.remove("hidden");
+   $("hostAnswerList").innerHTML="";
+   q.answers.forEach((a,i)=>{const b=document.createElement("button");b.className="hostanswer "+(shown.includes(i)?"revealed":"");b.innerHTML=`<span>${i+1}. ${escapeHtml(a.text)}</span><small>${a.points} PTS ${shown.includes(i)?"✓ REVEALED":"— CLICK TO REVEAL"}</small>`;b.onclick=()=>{const next=[...(state.revealedAnswers||[])];if(!next.includes(i))next.push(i);update({revealedAnswers:next,revealed:next.length})};$("hostAnswerList").appendChild(b)});
+  }else $("hostAnswerKey").classList.add("hidden");
  }else{
+  if(role==="host")$("hostAnswerKey").classList.add("hidden");
   board.innerHTML="";if(state.answerShown){written.textContent=q.answer;written.classList.remove("hidden")}else{written.textContent="";written.classList.add("hidden")}
  }
 }
