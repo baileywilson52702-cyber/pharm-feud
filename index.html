@@ -221,7 +221,7 @@ $("nextRound").onclick=()=>{const next=(state?.roundIndex||0)+1;if(next>=rounds.
 $("nextQ").onclick=()=>{let ri=state.roundIndex,qi=state.questionIndex+1;if(qi>=rounds[ri].questions.length){if(ri<rounds.length-1){$("roundSelect").value=ri+1;updateQuestionOptions();intro(ri+1)}else update({screen:"final"});return}update({screen:"question",questionIndex:qi,revealed:0,revealedAnswers:[],answerShown:false,strikes:0});$("roundSelect").value=ri;$("questionSelect").value=qi};
 $("prevQ").onclick=()=>{let qi=Math.max(0,state.questionIndex-1);update({screen:"question",questionIndex:qi,revealed:0,revealedAnswers:[],answerShown:false,strikes:0});$("roundSelect").value=state.roundIndex;$("questionSelect").value=qi};
 $("reveal").onclick=()=>{const q=current();if(!q)return;if(q.type==="feud"){const shown=[...(state.revealedAnswers||[])];const next=q.answers.findIndex((a,i)=>!shown.includes(i));if(next>=0){shown.push(next);update({revealedAnswers:shown,revealed:shown.length})}}else update({answerShown:true})};
-$("revealAll").onclick=()=>{const q=current();if(!q)return;update(q.type==="feud"?{revealed:q.answers.length}:{answerShown:true})};
+$("revealAll").onclick=()=>{const q=current();if(!q)return;update(q.type==="feud"?{revealed:q.answers.length,revealedAnswers:q.answers.map((_,i)=>i)}:{answerShown:true})};
 $("strike").onclick=()=>update({strikes:Math.min(3,(state.strikes||0)+1)});
 $("clearStrikes").onclick=()=>update({strikes:0});
 $("team1").onclick=()=>update({team:0});$("team2").onclick=()=>update({team:1});
@@ -262,9 +262,13 @@ function render(){
  $("roundIntro").classList.toggle("hidden",state.screen!=="intro");
  $("liveGame").classList.toggle("hidden",state.screen==="intro"||state.screen==="final");
  $("finalScreen").classList.toggle("hidden",state.screen!=="final");
- if(state.screen==="final"){const a=state.scores?.[0]||0,b=state.scores?.[1]||0;const n=Array.isArray(state.teamNames)?state.teamNames:["Team 1","Team 2"];$("winnerTitle").textContent=a===b?"IT'S A TIE!":a>b?`${n[0]} WINS!`:`${n[1]} WINS!`;$("finalScores").textContent=`${n[0]}: ${a} points  •  ${n[1]}: ${b} points`;return}
+ if(state.screen==="final"){const a=state.scores?.[0]||0,b=state.scores?.[1]||0;const n=[cleanTeamName(state.teamNames?.[0],"Team 1"),cleanTeamName(state.teamNames?.[1],"Team 2")];$("winnerTitle").textContent=a===b?"IT'S A TIE!":a>b?`${n[0]} WINS!`:`${n[1]} WINS!`;$("finalScores").textContent=`${n[0]}: ${a} points  •  ${n[1]}: ${b} points`;return}
  const r=rounds[state.roundIndex];if(!r)return;
  if(role==="host"){$("roundSelect").value=state.roundIndex;updateQuestionOptions();$("questionSelect").value=state.questionIndex;}
+ if(state.screen==="intro"){
+  if(role==="host"){$("hostAnswerKey").classList.add("hidden");$("hostQuestionPreview").textContent="Round introduction is displayed.";$("completionStatus").textContent="Question status: round introduction.";}
+  return;
+ }
  $("roundNum").textContent="ROUND "+r.number;$("roundTitle").textContent=r.title.toUpperCase();
  $("score1").textContent=state.scores?.[0]||0;$("score2").textContent=state.scores?.[1]||0;$("audienceTeam1").textContent=names[0];$("audienceTeam2").textContent=names[1];
  document.querySelectorAll(".scorebox").forEach((el,i)=>el.classList.toggle("active",i===(state.team||0)));
