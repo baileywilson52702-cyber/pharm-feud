@@ -1,0 +1,2825 @@
+[
+  {
+    "number": 1,
+    "chapter": "Chapter 41",
+    "title": "Male Reproductive Drugs",
+    "questions": [
+      {
+        "type": "feud",
+        "question": "Name an androgen or androgen-related medication discussed in the lecture.",
+        "answers": [
+          {
+            "text": "Testosterone",
+            "points": 30
+          },
+          {
+            "text": "Methyltestosterone",
+            "points": 25
+          },
+          {
+            "text": "Fluoxymesterone",
+            "points": 25
+          },
+          {
+            "text": "Danazol",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name a reason testosterone/androgen therapy may be prescribed.",
+        "answers": [
+          {
+            "text": "Testosterone replacement therapy",
+            "points": 40
+          },
+          {
+            "text": "Delayed puberty",
+            "points": 35
+          },
+          {
+            "text": "Treatment of certain breast cancers",
+            "points": 25
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name an anabolic steroid listed in the lecture.",
+        "answers": [
+          {
+            "text": "Oxymetholone (Anadrol-50)",
+            "points": 40
+          },
+          {
+            "text": "Oxandrolone (Oxandrine)",
+            "points": 35
+          },
+          {
+            "text": "Nandrolone (Deca-Durabolin)",
+            "points": 25
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name an approved indication for anabolic steroids.",
+        "answers": [
+          {
+            "text": "Promote weight gain after extensive surgery",
+            "points": 25
+          },
+          {
+            "text": "Promote weight gain after trauma",
+            "points": 20
+          },
+          {
+            "text": "Chronic disease",
+            "points": 20
+          },
+          {
+            "text": "Anemia",
+            "points": 15
+          },
+          {
+            "text": "Hereditary angioedema",
+            "points": 10
+          },
+          {
+            "text": "Metastatic breast cancer",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name a major risk category emphasized for male reproductive medications.",
+        "answers": [
+          {
+            "text": "Liver problems / hepatotoxicity",
+            "points": 35
+          },
+          {
+            "text": "Cardiac problems / coronary disease / MI",
+            "points": 35
+          },
+          {
+            "text": "Embolisms (DVTs or PEs)",
+            "points": 30
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name a serious adverse effect or risk associated with anabolic steroid use.",
+        "answers": [
+          {
+            "text": "Hepatitis / liver dysfunction",
+            "points": 25
+          },
+          {
+            "text": "Hepatocellular cancer or liver tumors",
+            "points": 20
+          },
+          {
+            "text": "Myocardial infarction",
+            "points": 20
+          },
+          {
+            "text": "Stroke",
+            "points": 15
+          },
+          {
+            "text": "Venous thromboembolism (DVT/PE)",
+            "points": 15
+          },
+          {
+            "text": "Intracranial hypertension",
+            "points": 5
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name a possible effect of anabolic steroids on the body.",
+        "answers": [
+          {
+            "text": "Increased muscle mass / tissue building",
+            "points": 35
+          },
+          {
+            "text": "Reversal of catabolism",
+            "points": 25
+          },
+          {
+            "text": "Increased hemoglobin",
+            "points": 20
+          },
+          {
+            "text": "Increased red blood cell mass",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name a PDE-5 inhibitor used to treat erectile dysfunction.",
+        "answers": [
+          {
+            "text": "Sildenafil (Viagra)",
+            "points": 30
+          },
+          {
+            "text": "Tadalafil (Cialis)",
+            "points": 25
+          },
+          {
+            "text": "Vardenafil (Levitra)",
+            "points": 25
+          },
+          {
+            "text": "Avanafil (Stendra)",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name a step in the mechanism of PDE-5 inhibitors.",
+        "answers": [
+          {
+            "text": "Inhibit phosphodiesterase",
+            "points": 25
+          },
+          {
+            "text": "Allow cyclic GMP to build up",
+            "points": 25
+          },
+          {
+            "text": "Relax smooth muscle in the corpora cavernosa",
+            "points": 25
+          },
+          {
+            "text": "Allow increased blood inflow",
+            "points": 25
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name a contraindication or precaution for PDE-5 inhibitors from the lecture.",
+        "answers": [
+          {
+            "text": "Anatomical obstruction",
+            "points": 30
+          },
+          {
+            "text": "Cardiovascular disorder / coronary artery disease",
+            "points": 30
+          },
+          {
+            "text": "Liver dysfunction",
+            "points": 20
+          },
+          {
+            "text": "History of severe hypotension",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name an adverse effect of PDE-5 inhibitors listed in the slides.",
+        "answers": [
+          {
+            "text": "Hypotension",
+            "points": 25
+          },
+          {
+            "text": "Priapism",
+            "points": 25
+          },
+          {
+            "text": "Optic neuropathies",
+            "points": 20
+          },
+          {
+            "text": "Ototoxicity",
+            "points": 15
+          },
+          {
+            "text": "Melanoma",
+            "points": 15
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name a medication class that can interact with PDE-5 inhibitors and increase hypotension risk.",
+        "answers": [
+          {
+            "text": "Alpha-adrenergic blockers",
+            "points": 35
+          },
+          {
+            "text": "Antihypertensive medications",
+            "points": 35
+          },
+          {
+            "text": "Nitrates (including nitroglycerin)",
+            "points": 30
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name an alpha-adrenergic blocker used for BPH.",
+        "answers": [
+          {
+            "text": "Doxazosin",
+            "points": 25
+          },
+          {
+            "text": "Tamsulosin",
+            "points": 25
+          },
+          {
+            "text": "Alfuzosin",
+            "points": 20
+          },
+          {
+            "text": "Silodosin",
+            "points": 15
+          },
+          {
+            "text": "Terazosin",
+            "points": 15
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name a testosterone blocker used for BPH.",
+        "answers": [
+          {
+            "text": "Finasteride",
+            "points": 50
+          },
+          {
+            "text": "Dutasteride",
+            "points": 50
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name an adverse effect or interaction concern with BPH medications.",
+        "answers": [
+          {
+            "text": "Hypotension",
+            "points": 15
+          },
+          {
+            "text": "Dizziness",
+            "points": 10
+          },
+          {
+            "text": "Fatigue / lethargy",
+            "points": 10
+          },
+          {
+            "text": "Tachycardia",
+            "points": 10
+          },
+          {
+            "text": "GI upset",
+            "points": 10
+          },
+          {
+            "text": "Decreased libido / impotence / sexual dysfunction",
+            "points": 15
+          },
+          {
+            "text": "Interaction with antihypertensives, nitrates, or ED drugs",
+            "points": 20
+          },
+          {
+            "text": "Interaction with saw palmetto",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "type": "buzzer",
+        "question": "What three major risk categories did the instructor emphasize across male reproductive drugs?",
+        "answer": "Liver problems, cardiac problems, and embolisms"
+      },
+      {
+        "type": "buzzer",
+        "question": "What condition involving muscle wasting is a reason anabolic steroids may be used?",
+        "answer": "Cachexia"
+      },
+      {
+        "type": "buzzer",
+        "question": "Why should the application area and clothing be covered/washed when topical testosterone is used?",
+        "answer": "To prevent children from accidental exposure and virilization"
+      },
+      {
+        "type": "buzzer",
+        "question": "Which two PDE-5 inhibitors have a longer duration of action than sildenafil?",
+        "answer": "Tadalafil and vardenafil"
+      },
+      {
+        "type": "buzzer",
+        "question": "Which medication was identified as the newest drug approved for erectile dysfunction?",
+        "answer": "Avanafil (Stendra)"
+      },
+      {
+        "type": "buzzer",
+        "question": "What is the medical emergency involving an erection lasting longer than four hours?",
+        "answer": "Priapism"
+      },
+      {
+        "type": "buzzer",
+        "question": "Before giving nitroglycerin to a patient with chest pain, what medication use must the nurse ask about?",
+        "answer": "Use of a PDE-5 inhibitor / erectile dysfunction medication"
+      },
+      {
+        "type": "buzzer",
+        "question": "Why must nitrates not be given with PDE-5 inhibitors?",
+        "answer": "The combination can cause severe hypotension"
+      },
+      {
+        "type": "buzzer",
+        "question": "What serious condition must be ruled out before assuming an enlarged prostate is BPH?",
+        "answer": "Prostate cancer"
+      },
+      {
+        "type": "buzzer",
+        "question": "What hormone is formed from testosterone and supports prostate development and growth?",
+        "answer": "Dihydrotestosterone (DHT)"
+      },
+      {
+        "type": "buzzer",
+        "question": "Name the two testosterone blockers used to treat BPH.",
+        "answer": "Finasteride and dutasteride"
+      },
+      {
+        "type": "buzzer",
+        "question": "What precaution does the lecture give regarding women and testosterone blockers?",
+        "answer": "Women should not touch or handle testosterone blockers"
+      },
+      {
+        "type": "buzzer",
+        "question": "How long after stopping a testosterone blocker should men avoid donating blood or fathering a child, according to the lecture?",
+        "answer": "Six months"
+      },
+      {
+        "type": "buzzer",
+        "question": "What herbal supplement was listed as interacting with BPH medications?",
+        "answer": "Saw palmetto"
+      }
+    ]
+  },
+  {
+    "number": 2,
+    "chapter": "Chapter 47",
+    "title": "Lipid-Lowering Agents",
+    "questions": [
+      {
+        "type": "feud",
+        "question": "Name a risk factor or feature associated with metabolic syndrome.",
+        "answers": [
+          {
+            "text": "Elevated blood glucose",
+            "points": 15
+          },
+          {
+            "text": "Increased waist circumference",
+            "points": 17
+          },
+          {
+            "text": "Lipid abnormalities",
+            "points": 17
+          },
+          {
+            "text": "Hypertension",
+            "points": 17
+          },
+          {
+            "text": "Pro-inflammatory state",
+            "points": 17
+          },
+          {
+            "text": "Prothrombotic state",
+            "points": 17
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name a modifiable risk factor for atherosclerotic cardiovascular disease (ASCVD).",
+        "answers": [
+          {
+            "text": "Gout / elevated uric acid",
+            "points": 16
+          },
+          {
+            "text": "Cigarette smoking",
+            "points": 12
+          },
+          {
+            "text": "Sedentary lifestyle",
+            "points": 12
+          },
+          {
+            "text": "High stress",
+            "points": 12
+          },
+          {
+            "text": "Hypertension",
+            "points": 12
+          },
+          {
+            "text": "Obesity",
+            "points": 12
+          },
+          {
+            "text": "Diabetes",
+            "points": 12
+          },
+          {
+            "text": "Untreated bacterial infections",
+            "points": 12
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name one of the three major types of lipids discussed in the lecture.",
+        "answers": [
+          {
+            "text": "Triglycerides",
+            "points": 34
+          },
+          {
+            "text": "Phospholipids",
+            "points": 33
+          },
+          {
+            "text": "Cholesterol",
+            "points": 33
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name a type of lipoprotein that transports fats or cholesterol through the body.",
+        "answers": [
+          {
+            "text": "Chylomicrons",
+            "points": 20
+          },
+          {
+            "text": "Very-low-density lipoproteins (VLDL)",
+            "points": 20
+          },
+          {
+            "text": "Intermediate-density lipoproteins (IDL)",
+            "points": 20
+          },
+          {
+            "text": "Low-density lipoproteins (LDL)",
+            "points": 20
+          },
+          {
+            "text": "High-density lipoproteins (HDL)",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name a heart-healthy lipid target from the lecture.",
+        "answers": [
+          {
+            "text": "Total cholesterol below 200 mg/dL",
+            "points": 34
+          },
+          {
+            "text": "LDL below 100 mg/dL",
+            "points": 33
+          },
+          {
+            "text": "HDL 60 mg/dL or higher",
+            "points": 33
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name a bile acid sequestrant.",
+        "answers": [
+          {
+            "text": "Cholestyramine",
+            "points": 34
+          },
+          {
+            "text": "Colestipol",
+            "points": 33
+          },
+          {
+            "text": "Colesevelam",
+            "points": 33
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name an adverse effect of bile acid sequestrants.",
+        "answers": [
+          {
+            "text": "Constipation",
+            "points": 16
+          },
+          {
+            "text": "GI irritation / nausea",
+            "points": 12
+          },
+          {
+            "text": "Increased bleeding time from reduced vitamin K absorption",
+            "points": 12
+          },
+          {
+            "text": "Fat-soluble vitamin deficiency (A, D, E, K)",
+            "points": 12
+          },
+          {
+            "text": "Headache",
+            "points": 12
+          },
+          {
+            "text": "Anxiety",
+            "points": 12
+          },
+          {
+            "text": "Fatigue",
+            "points": 12
+          },
+          {
+            "text": "Drowsiness",
+            "points": 12
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name a medication whose absorption can be decreased or delayed by bile acid sequestrants.",
+        "answers": [
+          {
+            "text": "Amiodarone",
+            "points": 16
+          },
+          {
+            "text": "Thiazide or loop diuretics",
+            "points": 12
+          },
+          {
+            "text": "Digoxin",
+            "points": 12
+          },
+          {
+            "text": "Warfarin",
+            "points": 12
+          },
+          {
+            "text": "Thyroid hormones",
+            "points": 12
+          },
+          {
+            "text": "Hormonal contraceptives",
+            "points": 12
+          },
+          {
+            "text": "Corticosteroids",
+            "points": 12
+          },
+          {
+            "text": "Fat-soluble vitamins (A, D, E, K)",
+            "points": 12
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name an HMG-CoA reductase inhibitor (statin).",
+        "answers": [
+          {
+            "text": "Atorvastatin",
+            "points": 16
+          },
+          {
+            "text": "Fluvastatin",
+            "points": 14
+          },
+          {
+            "text": "Lovastatin",
+            "points": 14
+          },
+          {
+            "text": "Pitavastatin",
+            "points": 14
+          },
+          {
+            "text": "Pravastatin",
+            "points": 14
+          },
+          {
+            "text": "Rosuvastatin",
+            "points": 14
+          },
+          {
+            "text": "Simvastatin",
+            "points": 14
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name a serious adverse effect or complication associated with statins.",
+        "answers": [
+          {
+            "text": "Elevated liver enzymes / hepatotoxicity",
+            "points": 25
+          },
+          {
+            "text": "Myopathy",
+            "points": 25
+          },
+          {
+            "text": "Rhabdomyolysis",
+            "points": 25
+          },
+          {
+            "text": "Acute kidney injury / kidney failure secondary to rhabdomyolysis",
+            "points": 25
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name a medication or medication class that can interact with statins and increase the risk of muscle injury or liver problems.",
+        "answers": [
+          {
+            "text": "Erythromycin",
+            "points": 15
+          },
+          {
+            "text": "Ketoconazole",
+            "points": 17
+          },
+          {
+            "text": "Protease inhibitors",
+            "points": 17
+          },
+          {
+            "text": "Cyclosporine",
+            "points": 17
+          },
+          {
+            "text": "Fibrates",
+            "points": 17
+          },
+          {
+            "text": "Ezetimibe",
+            "points": 17
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name an adverse effect associated with ezetimibe.",
+        "answers": [
+          {
+            "text": "Abdominal pain",
+            "points": 16
+          },
+          {
+            "text": "Diarrhea",
+            "points": 12
+          },
+          {
+            "text": "Headache",
+            "points": 12
+          },
+          {
+            "text": "Dizziness",
+            "points": 12
+          },
+          {
+            "text": "Fatigue",
+            "points": 12
+          },
+          {
+            "text": "Upper respiratory tract infection",
+            "points": 12
+          },
+          {
+            "text": "Back pain",
+            "points": 12
+          },
+          {
+            "text": "Muscle pain / rare hepatitis",
+            "points": 12
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name a PCSK9 inhibitor.",
+        "answers": [
+          {
+            "text": "Alirocumab",
+            "points": 34
+          },
+          {
+            "text": "Evolocumab",
+            "points": 33
+          },
+          {
+            "text": "Inclisiran",
+            "points": 33
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name a fibrate medication.",
+        "answers": [
+          {
+            "text": "Fenofibrate",
+            "points": 34
+          },
+          {
+            "text": "Fenofibric acid",
+            "points": 33
+          },
+          {
+            "text": "Gemfibrozil",
+            "points": 33
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name an adverse effect or complication associated with fibrates.",
+        "answers": [
+          {
+            "text": "Elevated liver enzymes",
+            "points": 15
+          },
+          {
+            "text": "Increased CPK / muscle injury",
+            "points": 17
+          },
+          {
+            "text": "Myopathy / rhabdomyolysis",
+            "points": 17
+          },
+          {
+            "text": "GI or muscle discomfort",
+            "points": 17
+          },
+          {
+            "text": "Gallstones",
+            "points": 17
+          },
+          {
+            "text": "Increased bleeding with warfarin",
+            "points": 17
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name an adverse effect or risk associated with niacin.",
+        "answers": [
+          {
+            "text": "Flushing",
+            "points": 16
+          },
+          {
+            "text": "Hepatotoxicity",
+            "points": 12
+          },
+          {
+            "text": "Atrial fibrillation",
+            "points": 12
+          },
+          {
+            "text": "Increased uric acid / gout",
+            "points": 12
+          },
+          {
+            "text": "Increased blood glucose",
+            "points": 12
+          },
+          {
+            "text": "Decreased phosphate",
+            "points": 12
+          },
+          {
+            "text": "Decreased platelet count",
+            "points": 12
+          },
+          {
+            "text": "Nausea / abdominal pain",
+            "points": 12
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name a medication included in the omega-3 fatty acid group.",
+        "answers": [
+          {
+            "text": "Omega-3-acid ethyl esters",
+            "points": 50
+          },
+          {
+            "text": "Icosapent ethyl",
+            "points": 50
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name a condition or situation in which a bile acid sequestrant may be used.",
+        "answers": [
+          {
+            "text": "High LDL / primary hypercholesterolemia",
+            "points": 34
+          },
+          {
+            "text": "Pruritus associated with partial biliary obstruction (cholestyramine)",
+            "points": 33
+          },
+          {
+            "text": "Statin intolerance",
+            "points": 33
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "What lifestyle measures should patients continue while taking a statin to manage cardiovascular risk?",
+        "answers": [
+          {
+            "text": "Exercise",
+            "points": 20
+          },
+          {
+            "text": "Heart-healthy dietary changes",
+            "points": 20
+          },
+          {
+            "text": "Control of blood pressure",
+            "points": 20
+          },
+          {
+            "text": "Control of blood glucose",
+            "points": 20
+          },
+          {
+            "text": "Smoking cessation",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "type": "buzzer",
+        "question": "What is the main goal of HDL, often called the 'good cholesterol'?",
+        "answer": "Transport cholesterol from tissues back to the liver for elimination through bile and feces."
+      },
+      {
+        "type": "buzzer",
+        "question": "Which type of cholesterol is considered 'bad' and increases cardiovascular risk when elevated?",
+        "answer": "LDL cholesterol."
+      },
+      {
+        "type": "buzzer",
+        "question": "What total cholesterol level is considered heart healthy in the lecture?",
+        "answer": "Below 200 mg/dL."
+      },
+      {
+        "type": "buzzer",
+        "question": "What is usually the first step in treating hyperlipidemia before adding medication?",
+        "answer": "Lifestyle modification, including diet, exercise, stress reduction, and smoking cessation."
+      },
+      {
+        "type": "buzzer",
+        "question": "How do bile acid sequestrants lower cholesterol?",
+        "answer": "They bind bile acids in the intestine; the complex is excreted in feces, so the liver uses cholesterol to make more bile acids."
+      },
+      {
+        "type": "buzzer",
+        "question": "When should other medications be taken in relation to a bile acid sequestrant?",
+        "answer": "Other medications should be taken 1 hour before or 4–6 hours after the bile acid sequestrant."
+      },
+      {
+        "type": "buzzer",
+        "question": "Which vitamin deficiency can contribute to increased bleeding time with bile acid sequestrants?",
+        "answer": "Vitamin K deficiency."
+      },
+      {
+        "type": "buzzer",
+        "question": "Why may a patient taking a bile acid sequestrant need a non-oral contraceptive method?",
+        "answer": "The sequestrant can decrease absorption and effectiveness of oral hormonal contraceptives."
+      },
+      {
+        "type": "buzzer",
+        "question": "How do statins lower cholesterol?",
+        "answer": "They inhibit HMG-CoA reductase, blocking cholesterol production in the liver and increasing hepatic removal of LDL from the blood."
+      },
+      {
+        "type": "buzzer",
+        "question": "What food or drink should patients avoid while taking statins?",
+        "answer": "Grapefruit and grapefruit juice."
+      },
+      {
+        "type": "buzzer",
+        "question": "Why should a patient taking a statin report new muscle pain or weakness?",
+        "answer": "It may indicate myopathy or rhabdomyolysis, which can damage the kidneys and cause acute kidney failure."
+      },
+      {
+        "type": "buzzer",
+        "question": "Where does ezetimibe work to reduce cholesterol absorption?",
+        "answer": "At the brush border of the small intestine."
+      },
+      {
+        "type": "buzzer",
+        "question": "How are PCSK9 inhibitors administered?",
+        "answer": "By subcutaneous injection."
+      },
+      {
+        "type": "buzzer",
+        "question": "What infection-related concern should be monitored with PCSK9 inhibitors, according to the lecture and review?",
+        "answer": "Increased risk of infection, including nasopharyngitis, urinary tract infections, and upper respiratory infections."
+      },
+      {
+        "type": "buzzer",
+        "question": "What is the primary lipid-lowering effect of fibrates?",
+        "answer": "They primarily lower triglyceride levels."
+      },
+      {
+        "type": "buzzer",
+        "question": "What serious muscle complication is especially important when fibrates are combined with statins?",
+        "answer": "Myopathy and rhabdomyolysis."
+      },
+      {
+        "type": "buzzer",
+        "question": "When is niacin administered, according to the lecture?",
+        "answer": "At bedtime."
+      },
+      {
+        "type": "buzzer",
+        "question": "What is the hallmark adverse effect of niacin?",
+        "answer": "Flushing."
+      },
+      {
+        "type": "buzzer",
+        "question": "What condition can be triggered by niacin increasing serum uric acid?",
+        "answer": "Gout."
+      },
+      {
+        "type": "buzzer",
+        "question": "What is the chief adverse effect of omega-3 fatty acid medications?",
+        "answer": "Prolonged bleeding time / increased bleeding risk."
+      },
+      {
+        "type": "buzzer",
+        "question": "When might combination lipid-lowering therapy be considered?",
+        "answer": "When strict diet, exercise, and lifestyle changes plus one lipid-lowering agent do not adequately control lipid levels."
+      },
+      {
+        "type": "buzzer",
+        "question": "What type of medication combinations should be avoided because of increased rhabdomyolysis risk?",
+        "answer": "Combinations such as statins with niacin or gemfibrozil."
+      },
+      {
+        "type": "buzzer",
+        "question": "What important substance does the body use cholesterol to form?",
+        "answer": "Steroid hormones."
+      },
+      {
+        "type": "buzzer",
+        "question": "What serious hypersensitivity reactions should nurses watch for with PCSK9 inhibitors?",
+        "answer": "Anaphylaxis, rash, and pruritus."
+      },
+      {
+        "type": "buzzer",
+        "question": "What is an important interaction concern when a patient takes fenofibric acid with warfarin?",
+        "answer": "Fenofibric acid can increase warfarin's effects and bleeding risk; monitor INR."
+      },
+      {
+        "type": "buzzer",
+        "question": "Why should patients taking omega-3 fatty acid medications be monitored closely if they also take anticoagulants or antiplatelet medications?",
+        "answer": "Omega-3 medications prolong bleeding time and can increase bleeding risk."
+      }
+    ]
+  },
+  {
+    "number": 3,
+    "chapter": "Chapter 48",
+    "title": "Drugs Affecting Blood Coagulation",
+    "questions": [
+      {
+        "type": "feud",
+        "question": "Name one of the three major drug classes that affect blood clotting.",
+        "answers": [
+          {
+            "text": "Antiplatelets",
+            "points": 33
+          },
+          {
+            "text": "anticoagulants",
+            "points": 33
+          },
+          {
+            "text": "thrombolytics.",
+            "points": 33
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name a medication classified as an antiplatelet agent.",
+        "answers": [
+          {
+            "text": "Aspirin",
+            "points": 10
+          },
+          {
+            "text": "clopidogrel",
+            "points": 10
+          },
+          {
+            "text": "ticagrelor",
+            "points": 10
+          },
+          {
+            "text": "prasugrel",
+            "points": 10
+          },
+          {
+            "text": "anagrelide",
+            "points": 10
+          },
+          {
+            "text": "tirofiban",
+            "points": 10
+          },
+          {
+            "text": "eptifibatide",
+            "points": 10
+          },
+          {
+            "text": "cilostazol",
+            "points": 10
+          },
+          {
+            "text": "dipyridamole",
+            "points": 10
+          },
+          {
+            "text": "abciximab.",
+            "points": 10
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name a reason a patient may be prescribed an antiplatelet medication.",
+        "answers": [
+          {
+            "text": "Prevent cerebrovascular occlusion",
+            "points": 20
+          },
+          {
+            "text": "treat peripheral artery disease",
+            "points": 20
+          },
+          {
+            "text": "treat cardiovascular disease prone to vessel occlusion",
+            "points": 20
+          },
+          {
+            "text": "maintain venous or arterial grafts",
+            "points": 20
+          },
+          {
+            "text": "adjunct to thrombolytic therapy in MI.",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name a nursing assessment or precaution for a patient taking antiplatelet medication.",
+        "answers": [
+          {
+            "text": "Assess for bleeding disorders",
+            "points": 16
+          },
+          {
+            "text": "recent surgery or closed-head injury",
+            "points": 16
+          },
+          {
+            "text": "other drugs or herbs affecting bleeding",
+            "points": 16
+          },
+          {
+            "text": "monitor platelet counts",
+            "points": 16
+          },
+          {
+            "text": "bleeding precautions",
+            "points": 16
+          },
+          {
+            "text": "fall prevention.",
+            "points": 16
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name a medication in the oral anticoagulant group.",
+        "answers": [
+          {
+            "text": "Apixaban",
+            "points": 20
+          },
+          {
+            "text": "edoxaban",
+            "points": 20
+          },
+          {
+            "text": "rivaroxaban",
+            "points": 20
+          },
+          {
+            "text": "dabigatran",
+            "points": 20
+          },
+          {
+            "text": "warfarin.",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name a medication in the injectable anticoagulant group.",
+        "answers": [
+          {
+            "text": "Heparin",
+            "points": 25
+          },
+          {
+            "text": "fondaparinux",
+            "points": 25
+          },
+          {
+            "text": "dalteparin",
+            "points": 25
+          },
+          {
+            "text": "enoxaparin.",
+            "points": 25
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name a condition that anticoagulants are used to prevent or treat.",
+        "answers": [
+          {
+            "text": "DVT",
+            "points": 16
+          },
+          {
+            "text": "pulmonary embolism",
+            "points": 16
+          },
+          {
+            "text": "atrial fibrillation with embolism",
+            "points": 16
+          },
+          {
+            "text": "ischemic stroke",
+            "points": 16
+          },
+          {
+            "text": "thrombus formation after valve replacement",
+            "points": 16
+          },
+          {
+            "text": "DIC.",
+            "points": 16
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name a sign or symptom that may indicate bleeding in a patient taking anticoagulants.",
+        "answers": [
+          {
+            "text": "Hematuria",
+            "points": 14
+          },
+          {
+            "text": "blood in stool",
+            "points": 14
+          },
+          {
+            "text": "black/tarry stool",
+            "points": 14
+          },
+          {
+            "text": "bleeding gums",
+            "points": 14
+          },
+          {
+            "text": "decreased urine output",
+            "points": 14
+          },
+          {
+            "text": "tachycardia",
+            "points": 14
+          },
+          {
+            "text": "hypotension.",
+            "points": 14
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name a laboratory test used to monitor anticoagulant therapy.",
+        "answers": [
+          {
+            "text": "INR",
+            "points": 33
+          },
+          {
+            "text": "PT",
+            "points": 33
+          },
+          {
+            "text": "PTT/aPTT.",
+            "points": 33
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name a medication or substance used to reverse an anticoagulant.",
+        "answers": [
+          {
+            "text": "Vitamin K",
+            "points": 50
+          },
+          {
+            "text": "protamine sulfate.",
+            "points": 50
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name an adverse effect or complication associated with heparin or low-molecular-weight heparin.",
+        "answers": [
+          {
+            "text": "Bleeding/hemorrhage",
+            "points": 16
+          },
+          {
+            "text": "thrombocytopenia",
+            "points": 16
+          },
+          {
+            "text": "HIT",
+            "points": 16
+          },
+          {
+            "text": "white clot syndrome",
+            "points": 16
+          },
+          {
+            "text": "easy bruising",
+            "points": 16
+          },
+          {
+            "text": "petechiae.",
+            "points": 16
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name a nursing consideration when administering low-molecular-weight heparin.",
+        "answers": [
+          {
+            "text": "Give subcutaneously into deep abdominal fat",
+            "points": 16
+          },
+          {
+            "text": "do not aspirate",
+            "points": 16
+          },
+          {
+            "text": "do not expel air bubble",
+            "points": 16
+          },
+          {
+            "text": "avoid 1–2 inches around umbilicus or scars",
+            "points": 16
+          },
+          {
+            "text": "inject at 90 degrees",
+            "points": 16
+          },
+          {
+            "text": "teach self-administration.",
+            "points": 16
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name a reason heparin may be used in a hospital patient.",
+        "answers": [
+          {
+            "text": "Prevent or treat blood clots",
+            "points": 33
+          },
+          {
+            "text": "prevent clotting in indwelling catheters/central lines",
+            "points": 33
+          },
+          {
+            "text": "treat DIC.",
+            "points": 33
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name a thrombolytic medication.",
+        "answers": [
+          {
+            "text": "Alteplase (tPA)",
+            "points": 33
+          },
+          {
+            "text": "reteplase",
+            "points": 33
+          },
+          {
+            "text": "tenecteplase.",
+            "points": 33
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name a serious risk or complication associated with thrombolytic therapy.",
+        "answers": [
+          {
+            "text": "Major bleeding",
+            "points": 14
+          },
+          {
+            "text": "internal hemorrhage",
+            "points": 14
+          },
+          {
+            "text": "hematoma",
+            "points": 14
+          },
+          {
+            "text": "allergic reaction",
+            "points": 14
+          },
+          {
+            "text": "anaphylaxis",
+            "points": 14
+          },
+          {
+            "text": "hypotension",
+            "points": 14
+          },
+          {
+            "text": "tachycardia.",
+            "points": 14
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name a nursing intervention for a patient receiving thrombolytic therapy.",
+        "answers": [
+          {
+            "text": "Handle gently",
+            "points": 14
+          },
+          {
+            "text": "limit venipunctures",
+            "points": 14
+          },
+          {
+            "text": "use pressure dressings",
+            "points": 14
+          },
+          {
+            "text": "avoid IM injections",
+            "points": 14
+          },
+          {
+            "text": "check vascular access sites",
+            "points": 14
+          },
+          {
+            "text": "check urine, stool, and emesis for blood",
+            "points": 14
+          },
+          {
+            "text": "monitor subtle bleeding.",
+            "points": 14
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name a condition or situation in which thrombolytics may be used.",
+        "answers": [
+          {
+            "text": "Acute MI",
+            "points": 25
+          },
+          {
+            "text": "ischemic stroke",
+            "points": 25
+          },
+          {
+            "text": "pulmonary embolism",
+            "points": 25
+          },
+          {
+            "text": "occluded central line.",
+            "points": 25
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name a contraindication or major precaution for thrombolytic therapy.",
+        "answers": [
+          {
+            "text": "Active internal bleeding",
+            "points": 14
+          },
+          {
+            "text": "dissecting aneurysm",
+            "points": 14
+          },
+          {
+            "text": "history of hemorrhagic stroke",
+            "points": 14
+          },
+          {
+            "text": "recent surgery or trauma",
+            "points": 14
+          },
+          {
+            "text": "cancer",
+            "points": 14
+          },
+          {
+            "text": "severe uncontrolled hypertension",
+            "points": 14
+          },
+          {
+            "text": "advanced age.",
+            "points": 14
+          }
+        ]
+      },
+      {
+        "type": "buzzer",
+        "question": "What is the main difference between an anticoagulant and an antiplatelet?",
+        "answer": "Anticoagulants interfere with the clotting cascade and thrombin formation; antiplatelets interfere with platelet adhesion and aggregation."
+      },
+      {
+        "type": "buzzer",
+        "question": "What is the main function of a thrombolytic medication?",
+        "answer": "It breaks down an existing blood clot by activating the plasmin system."
+      },
+      {
+        "type": "buzzer",
+        "question": "Do anticoagulants dissolve existing blood clots?",
+        "answer": "No. They prevent clot formation or prevent an existing clot from getting larger."
+      },
+      {
+        "type": "buzzer",
+        "question": "Where are clotting factors produced?",
+        "answer": "In the liver."
+      },
+      {
+        "type": "buzzer",
+        "question": "What is the difference between a platelet plug and a blood clot formed by the coagulation cascade?",
+        "answer": "The platelet plug forms through platelet adhesion and aggregation; the coagulation cascade activates clotting factors to form a clot."
+      },
+      {
+        "type": "buzzer",
+        "question": "Why is aspirin considered an antiplatelet medication?",
+        "answer": "It decreases platelet aggregation and also has anti-inflammatory, analgesic, and antipyretic effects."
+      },
+      {
+        "type": "buzzer",
+        "question": "What should a patient do if prescribed enteric-coated aspirin?",
+        "answer": "Swallow it whole; do not crush or chew it."
+      },
+      {
+        "type": "buzzer",
+        "question": "What serious toxicity should nurses monitor for in patients taking aspirin?",
+        "answer": "Salicylate toxicity, which can cause tinnitus, sweating, headache, dizziness, and tachycardia."
+      },
+      {
+        "type": "buzzer",
+        "question": "Which clotting factor is inhibited by apixaban, edoxaban, and rivaroxaban?",
+        "answer": "Factor Xa."
+      },
+      {
+        "type": "buzzer",
+        "question": "Which oral anticoagulant is a direct thrombin inhibitor?",
+        "answer": "Dabigatran."
+      },
+      {
+        "type": "buzzer",
+        "question": "How does warfarin work?",
+        "answer": "It interferes with the manufacturing of vitamin K, decreasing vitamin K-dependent clotting factors."
+      },
+      {
+        "type": "buzzer",
+        "question": "What dietary instruction is important for a patient taking warfarin?",
+        "answer": "Eat a consistent amount of green leafy vegetables containing vitamin K."
+      },
+      {
+        "type": "buzzer",
+        "question": "What laboratory value is used to monitor warfarin therapy?",
+        "answer": "PT/INR."
+      },
+      {
+        "type": "buzzer",
+        "question": "At what INR should the provider be notified, according to the course review?",
+        "answer": "Greater than 3.5."
+      },
+      {
+        "type": "buzzer",
+        "question": "What is the antidote for warfarin toxicity?",
+        "answer": "Vitamin K (phytonadione)."
+      },
+      {
+        "type": "buzzer",
+        "question": "What laboratory value is used to monitor an IV heparin infusion?",
+        "answer": "PTT/aPTT."
+      },
+      {
+        "type": "buzzer",
+        "question": "What is the target PTT for a patient receiving heparin, according to the lecture?",
+        "answer": "1.5–2.5 times the control value."
+      },
+      {
+        "type": "buzzer",
+        "question": "What is the antidote for heparin?",
+        "answer": "Protamine sulfate."
+      },
+      {
+        "type": "buzzer",
+        "question": "What does HIT stand for, and what happens?",
+        "answer": "Heparin-induced thrombocytopenia; the platelet count decreases due to an immune reaction to heparin."
+      },
+      {
+        "type": "buzzer",
+        "question": "What is white clot syndrome?",
+        "answer": "Heparin-induced thrombocytopenia associated with thrombosis."
+      },
+      {
+        "type": "buzzer",
+        "question": "What laboratory test should be monitored in patients receiving heparin or low-molecular-weight heparin to assess for thrombocytopenia?",
+        "answer": "CBC, including platelet count."
+      },
+      {
+        "type": "buzzer",
+        "question": "What is the correct technique for administering enoxaparin subcutaneously?",
+        "answer": "Inject into deep abdominal fat at a 90-degree angle; do not aspirate or expel the air bubble; avoid the umbilicus and scars."
+      },
+      {
+        "type": "buzzer",
+        "question": "Why should pressure be held after an IM injection or IV removal in a patient taking anticoagulants?",
+        "answer": "To reduce bleeding at the injection or puncture site."
+      },
+      {
+        "type": "buzzer",
+        "question": "What is the major adverse effect shared by antiplatelets, anticoagulants, and thrombolytics?",
+        "answer": "Bleeding."
+      },
+      {
+        "type": "application",
+        "question": "A patient taking an anticoagulant reports black, tarry stools. What should the nurse suspect?",
+        "answer": "Gastrointestinal bleeding."
+      },
+      {
+        "type": "application",
+        "question": "A patient receiving heparin has a falling platelet count. What complication should the nurse suspect?",
+        "answer": "Heparin-induced thrombocytopenia (HIT)."
+      },
+      {
+        "type": "application",
+        "question": "Why can a patient with DIC receive heparin even though the patient is bleeding?",
+        "answer": "DIC causes widespread clotting that consumes clotting factors and platelets; heparin helps stop inappropriate widespread clotting."
+      },
+      {
+        "type": "application",
+        "question": "What are the major components of treatment for DIC emphasized in the lecture?",
+        "answer": "Control the underlying cause, administer blood products, and administer IV heparin."
+      },
+      {
+        "type": "application",
+        "question": "A patient arrives with signs of a stroke. What must be determined before administering a thrombolytic?",
+        "answer": "Whether the stroke is ischemic or hemorrhagic."
+      },
+      {
+        "type": "application",
+        "question": "Why are thrombolytics not used simply to prevent DVT after surgery?",
+        "answer": "They dissolve existing clots and carry a serious risk of bleeding; they are not routine clot-prevention medications."
+      },
+      {
+        "type": "application",
+        "question": "What should the nurse do immediately if a patient receiving a thrombolytic begins bleeding?",
+        "answer": "Notify the provider/medical team immediately (STAT)."
+      },
+      {
+        "type": "application",
+        "question": "Why is a history of hemorrhagic stroke important before giving a thrombolytic?",
+        "answer": "It is a major precaution because thrombolytics can cause severe bleeding."
+      }
+    ]
+  },
+  {
+    "number": 4,
+    "chapter": "Chapter 54",
+    "title": "Drugs Acting on the Upper Respiratory Tract",
+    "questions": [
+      {
+        "type": "feud",
+        "question": "Name a centrally acting antitussive medication.",
+        "answers": [
+          {
+            "text": "Codeine",
+            "points": 33
+          },
+          {
+            "text": "hydrocodone",
+            "points": 33
+          },
+          {
+            "text": "dextromethorphan.",
+            "points": 33
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name a locally acting antitussive medication.",
+        "answers": [
+          {
+            "text": "Benzonatate (Tessalon Perles).",
+            "points": 100
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name an adverse effect of centrally acting antitussives.",
+        "answers": [
+          {
+            "text": "Drowsiness",
+            "points": 16
+          },
+          {
+            "text": "sedation",
+            "points": 16
+          },
+          {
+            "text": "respiratory depression",
+            "points": 16
+          },
+          {
+            "text": "nausea",
+            "points": 16
+          },
+          {
+            "text": "constipation",
+            "points": 16
+          },
+          {
+            "text": "dry mouth.",
+            "points": 16
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name a reason to avoid or use caution with centrally acting antitussives.",
+        "answers": [
+          {
+            "text": "Impaired airway maintenance",
+            "points": 14
+          },
+          {
+            "text": "asthma",
+            "points": 14
+          },
+          {
+            "text": "emphysema",
+            "points": 14
+          },
+          {
+            "text": "postoperative status",
+            "points": 14
+          },
+          {
+            "text": "head injury",
+            "points": 14
+          },
+          {
+            "text": "impaired CNS",
+            "points": 14
+          },
+          {
+            "text": "opioid addiction or hypersensitivity.",
+            "points": 14
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name a topical nasal decongestant.",
+        "answers": [
+          {
+            "text": "Oxymetazoline",
+            "points": 20
+          },
+          {
+            "text": "naphazoline",
+            "points": 20
+          },
+          {
+            "text": "phenylephrine",
+            "points": 20
+          },
+          {
+            "text": "tetrahydrozoline",
+            "points": 20
+          },
+          {
+            "text": "xylometazoline.",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name an oral decongestant.",
+        "answers": [
+          {
+            "text": "Pseudoephedrine",
+            "points": 50
+          },
+          {
+            "text": "phenylephrine.",
+            "points": 50
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name an adverse effect of decongestants.",
+        "answers": [
+          {
+            "text": "Stinging/burning of nasal mucosa",
+            "points": 11
+          },
+          {
+            "text": "rebound congestion",
+            "points": 11
+          },
+          {
+            "text": "anxiety",
+            "points": 11
+          },
+          {
+            "text": "tremors",
+            "points": 11
+          },
+          {
+            "text": "hypertension",
+            "points": 11
+          },
+          {
+            "text": "tachycardia",
+            "points": 11
+          },
+          {
+            "text": "arrhythmias",
+            "points": 11
+          },
+          {
+            "text": "urinary retention",
+            "points": 11
+          },
+          {
+            "text": "overdose.",
+            "points": 11
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name a condition that requires caution with decongestants.",
+        "answers": [
+          {
+            "text": "Glaucoma",
+            "points": 16
+          },
+          {
+            "text": "hypertension",
+            "points": 16
+          },
+          {
+            "text": "diabetes",
+            "points": 16
+          },
+          {
+            "text": "thyroid disease",
+            "points": 16
+          },
+          {
+            "text": "coronary artery disease",
+            "points": 16
+          },
+          {
+            "text": "nasal mucosal lesion or erosion.",
+            "points": 16
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name a steroid nasal decongestant.",
+        "answers": [
+          {
+            "text": "Beclomethasone",
+            "points": 20
+          },
+          {
+            "text": "budesonide",
+            "points": 20
+          },
+          {
+            "text": "flunisolide",
+            "points": 20
+          },
+          {
+            "text": "fluticasone",
+            "points": 20
+          },
+          {
+            "text": "triamcinolone.",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name an adverse effect or precaution associated with steroid nasal decongestants.",
+        "answers": [
+          {
+            "text": "Burning",
+            "points": 14
+          },
+          {
+            "text": "irritation",
+            "points": 14
+          },
+          {
+            "text": "drying of nasal mucosa",
+            "points": 14
+          },
+          {
+            "text": "headache",
+            "points": 14
+          },
+          {
+            "text": "increased infection risk",
+            "points": 14
+          },
+          {
+            "text": "suppressed healing",
+            "points": 14
+          },
+          {
+            "text": "acute infection is a contraindication.",
+            "points": 14
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name a first-generation antihistamine.",
+        "answers": [
+          {
+            "text": "Diphenhydramine",
+            "points": 25
+          },
+          {
+            "text": "hydroxyzine",
+            "points": 25
+          },
+          {
+            "text": "meclizine",
+            "points": 25
+          },
+          {
+            "text": "promethazine.",
+            "points": 25
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name a second-generation antihistamine.",
+        "answers": [
+          {
+            "text": "Cetirizine",
+            "points": 25
+          },
+          {
+            "text": "fexofenadine",
+            "points": 25
+          },
+          {
+            "text": "levocetirizine",
+            "points": 25
+          },
+          {
+            "text": "loratadine.",
+            "points": 25
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name an indication for antihistamines.",
+        "answers": [
+          {
+            "text": "Allergic rhinitis",
+            "points": 14
+          },
+          {
+            "text": "allergic conjunctivitis",
+            "points": 14
+          },
+          {
+            "text": "urticaria",
+            "points": 14
+          },
+          {
+            "text": "angioedema",
+            "points": 14
+          },
+          {
+            "text": "prophylaxis before blood/blood products",
+            "points": 14
+          },
+          {
+            "text": "motion sickness",
+            "points": 14
+          },
+          {
+            "text": "adjunct therapy in asthma.",
+            "points": 14
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name an adverse effect or precaution associated with antihistamines.",
+        "answers": [
+          {
+            "text": "Drowsiness",
+            "points": 14
+          },
+          {
+            "text": "sedation",
+            "points": 14
+          },
+          {
+            "text": "anticholinergic effects/dry mucous membranes",
+            "points": 14
+          },
+          {
+            "text": "nausea",
+            "points": 14
+          },
+          {
+            "text": "arrhythmias",
+            "points": 14
+          },
+          {
+            "text": "pregnancy contraindication in course slides",
+            "points": 14
+          },
+          {
+            "text": "caution with arrhythmia history.",
+            "points": 14
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name an expectorant or mucolytic medication.",
+        "answers": [
+          {
+            "text": "Guaifenesin",
+            "points": 33
+          },
+          {
+            "text": "acetylcysteine",
+            "points": 33
+          },
+          {
+            "text": "dornase alfa.",
+            "points": 33
+          }
+        ]
+      },
+      {
+        "type": "buzzer",
+        "question": "What type of cough are antitussives used to treat?",
+        "answer": "A nonproductive, dry cough."
+      },
+      {
+        "type": "buzzer",
+        "question": "Where do centrally acting antitussives work?",
+        "answer": "At the medullary cough center in the brain, depressing the cough reflex."
+      },
+      {
+        "type": "buzzer",
+        "question": "Which centrally acting antitussives are opioids?",
+        "answer": "Codeine and hydrocodone."
+      },
+      {
+        "type": "buzzer",
+        "question": "How does benzonatate suppress coughing?",
+        "answer": "It acts locally as an anesthetic in the respiratory tract, blocking stretch receptors that stimulate the cough reflex."
+      },
+      {
+        "type": "buzzer",
+        "question": "Why should centrally acting antitussives be avoided or used cautiously when airway maintenance is impaired?",
+        "answer": "Suppressing the cough reflex can interfere with clearing respiratory secretions; these drugs can also cause CNS and respiratory depression."
+      },
+      {
+        "type": "buzzer",
+        "question": "Which antitussive should not be combined with MAOIs?",
+        "answer": "Dextromethorphan."
+      },
+      {
+        "type": "buzzer",
+        "question": "What serious effects can occur when dextromethorphan is combined with an MAOI, according to the lecture?",
+        "answer": "Hypotension, fever, nausea, and coma."
+      },
+      {
+        "type": "buzzer",
+        "question": "How do decongestants relieve nasal congestion?",
+        "answer": "They cause vasoconstriction, shrinking swollen nasal mucous membranes and opening nasal passages."
+      },
+      {
+        "type": "buzzer",
+        "question": "What is rebound congestion?",
+        "answer": "Return or worsening of congestion associated with using a nasal decongestant too much or too often."
+      },
+      {
+        "type": "buzzer",
+        "question": "Which oral decongestants stimulate alpha-adrenergic receptors?",
+        "answer": "Pseudoephedrine and phenylephrine."
+      },
+      {
+        "type": "buzzer",
+        "question": "Why should patients with hypertension or coronary artery disease use decongestants cautiously?",
+        "answer": "Sympathomimetic effects can worsen these conditions and increase blood pressure and heart rate."
+      },
+      {
+        "type": "buzzer",
+        "question": "Why should topical nasal decongestants be used cautiously if the nasal mucosa has a lesion or erosion?",
+        "answer": "Damaged mucosa can increase systemic absorption."
+      },
+      {
+        "type": "buzzer",
+        "question": "What is the main indication for steroid nasal decongestants?",
+        "answer": "Treatment of allergic rhinitis."
+      },
+      {
+        "type": "buzzer",
+        "question": "What is a contraindication for steroid nasal decongestants in the course material?",
+        "answer": "Presence of an acute infection."
+      },
+      {
+        "type": "buzzer",
+        "question": "Which generation of antihistamines is more likely to cause sedation and drowsiness?",
+        "answer": "First-generation antihistamines."
+      },
+      {
+        "type": "buzzer",
+        "question": "What receptor do antihistamines block, and what additional effects do they have?",
+        "answer": "They block histamine H1 receptors and have anticholinergic and antipruritic effects."
+      },
+      {
+        "type": "buzzer",
+        "question": "What are the indications for antihistamines discussed in the lecture?",
+        "answer": "Allergic rhinitis, allergic conjunctivitis, urticaria, angioedema, prophylaxis before blood/blood products, motion sickness, and adjunct therapy in asthma."
+      },
+      {
+        "type": "buzzer",
+        "question": "What important limitation of antihistamines did the instructor discuss?",
+        "answer": "They may take several days to produce an effect and will not help symptoms that are not caused by histamine."
+      },
+      {
+        "type": "buzzer",
+        "question": "What is the primary action of guaifenesin?",
+        "answer": "It reduces the adhesiveness and surface tension of respiratory secretions, making them easier to clear."
+      },
+      {
+        "type": "buzzer",
+        "question": "What adverse effects are associated with guaifenesin?",
+        "answer": "Nausea, headache, dizziness, and rash."
+      },
+      {
+        "type": "buzzer",
+        "question": "Which two mucolytics are discussed in the lecture?",
+        "answer": "Acetylcysteine and dornase alfa."
+      },
+      {
+        "type": "buzzer",
+        "question": "What are important contraindications/precautions and adverse effects of mucolytics in the slides?",
+        "answer": "Contraindications/precautions: acute bronchospasm, peptic ulcers, and esophageal varices. Adverse effects: GI upset, stomatitis, rhinorrhea, and bronchospasm."
+      },
+      {
+        "type": "buzzer",
+        "question": "What is important teaching for patients using OTC cough and cold medications?",
+        "answer": "Review all active ingredients to avoid duplicate medications/overdose, follow dosing directions, and use supportive measures such as fluids, humidifiers, avoiding allergens, and hand hygiene."
+      },
+      {
+        "type": "buzzer",
+        "question": "What are important lifespan considerations for upper respiratory medications?",
+        "answer": "Do not use cough/cold medications containing antihistamines or decongestants in children younger than 2; pregnancy/breastfeeding safety is not established; older adults are more prone to adverse effects and need fall precautions and monitoring of renal/hepatic drug excretion."
+      },
+      {
+        "type": "buzzer",
+        "question": "What is the correct technique for using a nasal spray?",
+        "answer": "Blow the nose first; hold bottle upright; insert tip about one inch; tilt head slightly forward; aim outward away from septum; close opposite nostril; check whether product needs shaking."
+      },
+      {
+        "type": "application",
+        "question": "A patient with a productive cough asks for a medication to stop coughing. Why might an antitussive be inappropriate?",
+        "answer": "Antitussives suppress the cough reflex, while coughing helps clear mucus from the airways."
+      },
+      {
+        "type": "application",
+        "question": "A patient taking codeine for a cough becomes very drowsy and has slowed respirations. What should the nurse suspect?",
+        "answer": "CNS depression and respiratory depression from an opioid antitussive."
+      },
+      {
+        "type": "application",
+        "question": "A patient taking dextromethorphan also takes an MAOI. What is the concern?",
+        "answer": "The combination can cause hypotension, fever, nausea, and coma."
+      },
+      {
+        "type": "application",
+        "question": "A patient has used oxymetazoline repeatedly and reports worsening congestion. What should the nurse suspect?",
+        "answer": "Rebound congestion from overuse."
+      },
+      {
+        "type": "application",
+        "question": "A patient with hypertension and coronary artery disease asks about pseudoephedrine. What is the nursing concern?",
+        "answer": "Its sympathomimetic effects can increase blood pressure and heart rate and worsen cardiovascular conditions."
+      },
+      {
+        "type": "application",
+        "question": "A patient takes two different OTC cold products. What should the nurse assess?",
+        "answer": "The active ingredients in both products to identify duplicates and prevent overdose."
+      },
+      {
+        "type": "application",
+        "question": "A patient using a steroid nasal spray has an acute infection. What should the nurse recognize?",
+        "answer": "Acute infection is a contraindication for steroid nasal decongestants in the course material."
+      },
+      {
+        "type": "application",
+        "question": "A patient aims a nasal spray directly toward the septum. What instruction should the nurse provide?",
+        "answer": "Aim slightly outward, away from the septum; blow the nose first, hold the bottle upright, tilt the head slightly forward, and follow the product instructions about shaking."
+      },
+      {
+        "type": "application",
+        "question": "An older adult taking diphenhydramine reports dizziness and drowsiness. What is the priority nursing concern?",
+        "answer": "Increased fall risk due to sedation and impaired balance."
+      },
+      {
+        "type": "application",
+        "question": "A patient asks why loratadine may cause less drowsiness than diphenhydramine. What is the best explanation from the lecture?",
+        "answer": "Loratadine is second generation; first-generation antihistamines are more likely to cause sedation and drowsiness."
+      },
+      {
+        "type": "application",
+        "question": "A parent asks about giving a 1-year-old cough/cold products containing antihistamines or decongestants. What should the nurse teach?",
+        "answer": "Do not use these cough/cold medications in children younger than 2 years."
+      },
+      {
+        "type": "application",
+        "question": "A patient prescribed a mucolytic has a history of peptic ulcer disease and develops wheezing after a dose. What should the nurse recognize?",
+        "answer": "Peptic ulcers are a listed contraindication/precaution, and bronchospasm is a listed adverse effect of mucolytics."
+      }
+    ]
+  },
+  {
+    "number": 5,
+    "chapter": "Chapter 55",
+    "title": "Lower Respiratory Drugs",
+    "questions": [
+      {
+        "type": "feud",
+        "question": "Name one of the three major classes of bronchodilators.",
+        "answers": [
+          {
+            "text": "Xanthines",
+            "points": 33
+          },
+          {
+            "text": "sympathomimetics (beta agonists)",
+            "points": 33
+          },
+          {
+            "text": "anticholinergics.",
+            "points": 33
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name a xanthine medication.",
+        "answers": [
+          {
+            "text": "Aminophylline",
+            "points": 33
+          },
+          {
+            "text": "caffeine",
+            "points": 33
+          },
+          {
+            "text": "theophylline.",
+            "points": 33
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name a short-acting beta-2 agonist.",
+        "answers": [
+          {
+            "text": "Albuterol",
+            "points": 25
+          },
+          {
+            "text": "levalbuterol",
+            "points": 25
+          },
+          {
+            "text": "metaproterenol",
+            "points": 25
+          },
+          {
+            "text": "terbutaline.",
+            "points": 25
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name a long-acting beta-2 agonist.",
+        "answers": [
+          {
+            "text": "Arformoterol",
+            "points": 25
+          },
+          {
+            "text": "formoterol",
+            "points": 25
+          },
+          {
+            "text": "olodaterol",
+            "points": 25
+          },
+          {
+            "text": "salmeterol.",
+            "points": 25
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name an adverse effect of beta agonists.",
+        "answers": [
+          {
+            "text": "Tachycardia",
+            "points": 20
+          },
+          {
+            "text": "tremors",
+            "points": 20
+          },
+          {
+            "text": "increased blood pressure",
+            "points": 20
+          },
+          {
+            "text": "urinary retention",
+            "points": 20
+          },
+          {
+            "text": "paradoxical bronchoconstriction.",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name an anticholinergic bronchodilator.",
+        "answers": [
+          {
+            "text": "Ipratropium",
+            "points": 20
+          },
+          {
+            "text": "tiotropium",
+            "points": 20
+          },
+          {
+            "text": "aclidinium",
+            "points": 20
+          },
+          {
+            "text": "revefenacin",
+            "points": 20
+          },
+          {
+            "text": "umeclidinium.",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name an adverse effect of an anticholinergic bronchodilator.",
+        "answers": [
+          {
+            "text": "Dry mouth",
+            "points": 14
+          },
+          {
+            "text": "dizziness",
+            "points": 14
+          },
+          {
+            "text": "headache",
+            "points": 14
+          },
+          {
+            "text": "fatigue",
+            "points": 14
+          },
+          {
+            "text": "nervousness",
+            "points": 14
+          },
+          {
+            "text": "palpitations",
+            "points": 14
+          },
+          {
+            "text": "urinary retention.",
+            "points": 14
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name an inhaled corticosteroid.",
+        "answers": [
+          {
+            "text": "Beclomethasone",
+            "points": 20
+          },
+          {
+            "text": "budesonide",
+            "points": 20
+          },
+          {
+            "text": "ciclesonide",
+            "points": 20
+          },
+          {
+            "text": "fluticasone",
+            "points": 20
+          },
+          {
+            "text": "mometasone furoate.",
+            "points": 20
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name a leukotriene modifier.",
+        "answers": [
+          {
+            "text": "Zafirlukast",
+            "points": 33
+          },
+          {
+            "text": "montelukast",
+            "points": 33
+          },
+          {
+            "text": "zileuton.",
+            "points": 33
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name an immune modulator used for respiratory inflammation.",
+        "answers": [
+          {
+            "text": "Benralizumab",
+            "points": 16
+          },
+          {
+            "text": "dupilumab",
+            "points": 16
+          },
+          {
+            "text": "mepolizumab",
+            "points": 16
+          },
+          {
+            "text": "omalizumab",
+            "points": 16
+          },
+          {
+            "text": "reslizumab. These are monoclonal antibodies",
+            "points": 16
+          },
+          {
+            "text": "names end in -mab.",
+            "points": 16
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name a serious risk or adverse effect associated with immune modulators.",
+        "answers": [
+          {
+            "text": "Infections (including upper respiratory or herpes infections)",
+            "points": 14
+          },
+          {
+            "text": "malignancies",
+            "points": 14
+          },
+          {
+            "text": "anaphylaxis with omalizumab or reslizumab",
+            "points": 14
+          },
+          {
+            "text": "headache",
+            "points": 14
+          },
+          {
+            "text": "fever",
+            "points": 14
+          },
+          {
+            "text": "myalgia",
+            "points": 14
+          },
+          {
+            "text": "arthralgia.",
+            "points": 14
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name a lung surfactant used for neonatal respiratory distress syndrome.",
+        "answers": [
+          {
+            "text": "Beractant",
+            "points": 33
+          },
+          {
+            "text": "calfactant",
+            "points": 33
+          },
+          {
+            "text": "poractant.",
+            "points": 33
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name the condition treated with CFTR modulators.",
+        "answers": [
+          {
+            "text": "Cystic fibrosis.",
+            "points": 100
+          }
+        ]
+      },
+      {
+        "type": "feud",
+        "question": "Name a serious respiratory disorder discussed in this chapter.",
+        "answers": [
+          {
+            "text": "Asthma",
+            "points": 25
+          },
+          {
+            "text": "COPD",
+            "points": 25
+          },
+          {
+            "text": "ARDS",
+            "points": 25
+          },
+          {
+            "text": "neonatal respiratory distress syndrome.",
+            "points": 25
+          }
+        ]
+      },
+      {
+        "type": "buzzer",
+        "question": "What is the overall purpose of bronchodilators?",
+        "answer": "They relax smooth muscle and dilate the bronchi/airways, improving airflow."
+      },
+      {
+        "type": "buzzer",
+        "question": "How do xanthines produce their respiratory effect?",
+        "answer": "They inhibit release of slow-reacting substances of anaphylaxis and histamine, decreasing bronchial swelling and narrowing; they also relax respiratory smooth muscle."
+      },
+      {
+        "type": "buzzer",
+        "question": "What is the therapeutic serum theophylline range?",
+        "answer": "10–20 mcg/mL."
+      },
+      {
+        "type": "buzzer",
+        "question": "At approximately what theophylline level can severe toxicity occur?",
+        "answer": "Around 30 mcg/mL."
+      },
+      {
+        "type": "buzzer",
+        "question": "What adverse effects can occur with elevated theophylline levels or severe toxicity?",
+        "answer": "Elevated levels can cause insomnia and tachyarrhythmias. Severe toxicity can cause arrhythmias, hypotension, seizures, and death."
+      },
+      {
+        "type": "buzzer",
+        "question": "What should patients taking xanthines know about caffeine and theophylline levels?",
+        "answer": "Avoid caffeine because it increases the risk of adverse effects. Xanthines have a narrow therapeutic window. Theophylline levels are monitored; the therapeutic range is 10–20 mcg/mL, and severe toxicity can occur around 30 mcg/mL."
+      },
+      {
+        "type": "buzzer",
+        "question": "Why should a patient taking theophylline contact the provider before abruptly stopping smoking?",
+        "answer": "Smoking increases the metabolism of the drug. Stopping smoking can reduce metabolism and increase the risk of theophylline toxicity; the patient should contact the provider before stopping."
+      },
+      {
+        "type": "buzzer",
+        "question": "What monitoring is important for a patient taking theophylline?",
+        "answer": "Monitor serum theophylline levels because the drug has a narrow therapeutic window."
+      },
+      {
+        "type": "buzzer",
+        "question": "How do beta-2 agonists work?",
+        "answer": "They activate beta-2 receptors in the bronchi, causing bronchodilation and increasing the rate and depth of respiration."
+      },
+      {
+        "type": "buzzer",
+        "question": "What is the difference between short-acting and long-acting beta agonists?",
+        "answer": "Short-acting beta agonists provide rapid relief during acute bronchospasm. Long-acting beta agonists are used on a scheduled basis and are not rescue inhalers."
+      },
+      {
+        "type": "buzzer",
+        "question": "Why must long-acting beta agonists such as salmeterol not be used as rescue inhalers?",
+        "answer": "They do not provide immediate relief during an acute attack. Salmeterol and other long-acting beta agonists have a black box warning for increased risk of asthma-related death."
+      },
+      {
+        "type": "buzzer",
+        "question": "Which medication is the drug of choice for acute bronchospasm and anaphylactic reactions?",
+        "answer": "Epinephrine."
+      },
+      {
+        "type": "buzzer",
+        "question": "Which beta agonist is administered subcutaneously?",
+        "answer": "Terbutaline."
+      },
+      {
+        "type": "buzzer",
+        "question": "What is paradoxical bronchoconstriction?",
+        "answer": "A rare reaction in which the medication causes the airways to constrict rather than dilate, worsening bronchospasm."
+      },
+      {
+        "type": "buzzer",
+        "question": "Which conditions require caution with beta agonists?",
+        "answer": "Coronary artery disease, vascular disease, arrhythmias, and diabetes."
+      },
+      {
+        "type": "buzzer",
+        "question": "How do anticholinergic bronchodilators work?",
+        "answer": "They block acetylcholine at receptors in smooth muscle, suppressing parasympathetic activity and producing bronchodilation."
+      },
+      {
+        "type": "buzzer",
+        "question": "How does the action of an anticholinergic differ from that of a sympathomimetic?",
+        "answer": "An anticholinergic suppresses the parasympathetic nervous system; a sympathomimetic stimulates sympathetic effects. Anticholinergics do not directly stimulate the sympathetic system."
+      },
+      {
+        "type": "buzzer",
+        "question": "Which conditions can be aggravated by anticholinergic medications?",
+        "answer": "Glaucoma, bladder-neck obstruction, and prostatic hypertrophy."
+      },
+      {
+        "type": "buzzer",
+        "question": "Why can taking another anticholinergic medication increase adverse effects?",
+        "answer": "The anticholinergic effects can add together, increasing effects such as dry mouth, dizziness, palpitations, and urinary retention."
+      },
+      {
+        "type": "buzzer",
+        "question": "What should patients know about inhaled corticosteroids?",
+        "answer": "They reduce airway inflammation but are not emergency medications for an acute asthma attack. Give a bronchodilator first to open the airways so the anti-inflammatory medication can reach the airway. Patients should rinse their mouths after use and be monitored for infection because steroids suppress the immune response."
+      },
+      {
+        "type": "buzzer",
+        "question": "Why should a bronchodilator be given before an inhaled anti-inflammatory medication during an acute asthma episode?",
+        "answer": "The bronchodilator opens the airways first, allowing the anti-inflammatory medication to reach the airway."
+      },
+      {
+        "type": "buzzer",
+        "question": "What serious neuropsychiatric effects are associated with montelukast?",
+        "answer": "Depression, suicidal thoughts or behavior, hallucinations, and aggressive behavior."
+      },
+      {
+        "type": "buzzer",
+        "question": "Why are leukotriene modifiers not used for immediate relief during an acute asthma attack?",
+        "answer": "They are used for prophylaxis and treatment of asthma but do not provide immediate relief; they are not fast acting."
+      },
+      {
+        "type": "buzzer",
+        "question": "How are surfactants administered to neonates with respiratory distress syndrome, and what do they do?",
+        "answer": "They are instilled directly into the trachea through an endotracheal tube. They replace missing surfactant, reduce alveolar surface tension, and allow alveoli to expand for gas exchange."
+      },
+      {
+        "type": "buzzer",
+        "question": "Which administration routes should be recognized for respiratory medications, and which route works fastest overall?",
+        "answer": "IV works fastest overall. Inhaled medications are used for respiratory treatment. Terbutaline is administered subcutaneously. Lung surfactants are instilled directly into the trachea through an endotracheal tube. Oral medications generally have a slower onset than the other routes discussed."
+      },
+      {
+        "type": "application",
+        "question": "A patient taking theophylline reports insomnia and palpitations. What should the nurse suspect and what is an appropriate action?",
+        "answer": "The patient may have an elevated theophylline level or toxicity. Check the serum theophylline level and notify the provider."
+      },
+      {
+        "type": "application",
+        "question": "A patient taking theophylline says they plan to stop smoking today. What should the nurse teach?",
+        "answer": "Contact the provider before stopping. Smoking increases theophylline metabolism; stopping can reduce metabolism and increase the risk of toxicity."
+      },
+      {
+        "type": "application",
+        "question": "A patient taking theophylline drinks several cups of coffee daily. What should the nurse explain?",
+        "answer": "Caffeine increases the risk of adverse effects from xanthines. The patient should avoid caffeine."
+      },
+      {
+        "type": "application",
+        "question": "A patient having an acute asthma attack reaches for their salmeterol inhaler. What should the nurse explain?",
+        "answer": "Salmeterol is a long-acting beta agonist and is not a rescue medication because it does not provide immediate relief."
+      },
+      {
+        "type": "application",
+        "question": "A patient receiving a beta agonist develops tremors and tachycardia. How should the nurse interpret these findings?",
+        "answer": "They are adverse effects related to sympathetic stimulation by beta agonists."
+      },
+      {
+        "type": "application",
+        "question": "A patient reports worsening wheezing immediately after using a bronchodilator. What reaction should the nurse suspect?",
+        "answer": "Paradoxical bronchoconstriction, a rare reaction in which the airways constrict instead of dilating."
+      },
+      {
+        "type": "application",
+        "question": "A patient with glaucoma and prostatic hypertrophy is prescribed an anticholinergic bronchodilator. What is the concern?",
+        "answer": "Anticholinergic effects can aggravate glaucoma and prostatic hypertrophy/bladder-neck obstruction."
+      },
+      {
+        "type": "application",
+        "question": "A patient wants to use an inhaled corticosteroid for immediate relief during an asthma attack. What should the nurse explain?",
+        "answer": "Inhaled corticosteroids reduce inflammation but are not emergency medications. A bronchodilator should be given first to open the airways so the anti-inflammatory medication can reach them."
+      },
+      {
+        "type": "application",
+        "question": "A patient using an inhaled corticosteroid develops signs of a respiratory infection. What is the concern and what should the nurse reinforce?",
+        "answer": "Inhaled corticosteroids can suppress the immune response and increase infection risk. Reinforce proper medication use, including rinsing the mouth after administration, and reporting signs of infection."
+      },
+      {
+        "type": "application",
+        "question": "A patient taking montelukast reports new depression and suicidal thoughts. What should the nurse recognize?",
+        "answer": "These are serious neuropsychiatric effects associated with montelukast and require prompt reporting to the provider."
+      },
+      {
+        "type": "application",
+        "question": "A premature infant with respiratory distress syndrome is prescribed a surfactant. How is it administered and what does it do?",
+        "answer": "It is instilled directly into the trachea through an endotracheal tube. It replaces missing surfactant, reduces alveolar surface tension, and allows alveoli to expand for gas exchange."
+      },
+      {
+        "type": "application",
+        "question": "A patient is being considered for a CFTR modulator. What must be done before selecting the medication?",
+        "answer": "Genotype testing is needed to determine which medication the patient is likely to respond to."
+      }
+    ]
+  }
+]
