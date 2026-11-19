@@ -36,6 +36,7 @@ input,select{padding:11px;border-radius:10px;border:1px solid #9eadd0;background
 .score{font-size:34px;font-weight:1000;color:var(--gold)}.team{font-weight:900;font-size:18px}.strikes{font-size:30px;color:#ff6877;letter-spacing:7px;min-height:40px}
 .hostcontrols{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:16px}.hostcontrols button{padding:10px 8px}
 .hostbar{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}.hostbar select{flex:1;min-width:170px}
+.teamnamebar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:12px 0;padding:10px 12px;background:#ffffff12;border:1px solid #ffffff35;border-radius:12px}.teamnamefield{display:flex;gap:7px;align-items:center;flex:1;min-width:210px}.teamnamefield label{font-weight:800;white-space:nowrap}.teamnamefield input{width:100%;min-width:0}.teamlabel{font-weight:900}
 .answertext{background:#fff7df;color:#13244b;border-radius:14px;padding:18px;font-size:clamp(18px,2vw,26px);font-weight:800;line-height:1.35}
 .hostkey{margin-top:16px;background:#fff6dc;color:#10234a;border-radius:14px;padding:14px}
 .hostkey h3{margin:0 0 10px;color:#10234a}
@@ -67,6 +68,7 @@ footer{text-align:center;color:#aebfe0;padding:20px;font-size:12px}
 <section id="host" class="hidden">
 <div class="panel">
 <div class="row" style="justify-content:space-between"><div><div class="muted">HOST CONTROL ROOM</div><h2 style="margin:4px 0">Game Control Center</h2></div><div class="pill">ROOM <span id="hostCode"></span></div></div>
+<div class="teamnamebar"><strong>TEAM NAMES:</strong><div class="teamnamefield"><label for="teamName1">Team 1</label><input id="teamName1" type="text" maxlength="24" value="Team 1" aria-label="Team 1 name"></div><div class="teamnamefield"><label for="teamName2">Team 2</label><input id="teamName2" type="text" maxlength="24" value="Team 2" aria-label="Team 2 name"></div><span class="muted" style="font-size:12px">Press Tab or click away to save</span></div>
 <div class="hostbar"><select id="roundSelect"></select><select id="questionSelect"></select><button id="showRound">Show Round Intro</button><button id="loadQuestion">Load Question</button></div>
 <div class="notice" id="hostStatus">Choose a round and question, then load it to the audience screen.</div>
 <div class="question-preview" id="hostQuestionPreview">Selected question will appear here.</div>
@@ -76,7 +78,7 @@ footer{text-align:center;color:#aebfe0;padding:20px;font-size:12px}
 <button id="team1">Team 1 Turn</button><button id="team2" class="secondary">Team 2 Turn</button><button id="resetScores" class="danger">Reset Scores</button>
 </div>
 <div class="row" style="margin-top:14px;justify-content:space-between">
- <div class="row"><strong>LIVE SCORE:</strong><span class="pill">TEAM 1: <b id="hostScore1">0</b></span><span class="pill">TEAM 2: <b id="hostScore2">0</b></span></div>
+ <div class="row"><strong>LIVE SCORE:</strong><span class="pill"><span id="hostTeamLabel1">TEAM 1</span>: <b id="hostScore1">0</b></span><span class="pill"><span id="hostTeamLabel2">TEAM 2</span>: <b id="hostScore2">0</b></span></div>
  <div class="row"><button id="undoAction" class="secondary">↶ Undo Last Action</button><button id="nextRound" class="secondary">Next Round Intro →</button><button id="copyCode" class="secondary">Copy Room Code</button></div>
 </div>
 <div class="notice" id="completionStatus">Question status: waiting for a question.</div>
@@ -98,8 +100,8 @@ footer{text-align:center;color:#aebfe0;padding:20px;font-size:12px}
 <div id="writtenAnswer" class="answertext hidden"></div>
 </div>
 <aside class="side">
-<div class="scorebox"><div class="team">TEAM 1</div><div class="score" id="score1">0</div></div>
-<div class="scorebox"><div class="team">TEAM 2</div><div class="score" id="score2">0</div></div>
+<div class="scorebox"><div class="team" id="audienceTeam1">TEAM 1</div><div class="score" id="score1">0</div></div>
+<div class="scorebox"><div class="team" id="audienceTeam2">TEAM 2</div><div class="score" id="score2">0</div></div>
 <div class="scorebox"><div class="team">STRIKES</div><div class="strikes" id="strikeCount">— — —</div><div class="muted" id="turnText">Team 1's turn</div></div>
 </aside>
 </div>
@@ -183,7 +185,7 @@ function subscribe(){
  const cb=s=>{if(!s.exists()){alert("Room not found. Check the code.");return}state=s.val();render()};
  ref.on("value",cb);unsubscribe=()=>ref.off("value",cb);
 }
-function baseState(){return {screen:"intro",roundIndex:0,questionIndex:0,questionOrder:shuffledQuestionOrder(),revealed:0,revealedAnswers:[],answerShown:false,strikes:0,scores:[0,0],team:0,updated:Date.now()}}
+function baseState(){return {screen:"intro",roundIndex:0,questionIndex:0,questionOrder:shuffledQuestionOrder(),revealed:0,revealedAnswers:[],answerShown:false,strikes:0,scores:[0,0],team:0,teamNames:["Team 1","Team 2"],updated:Date.now()}}
 async function createRoom(){
  if(!db){alert("Firebase is not configured yet. Complete the setup steps in README.md.");return}
  room=code();role="host";state=baseState();
@@ -195,6 +197,9 @@ async function joinRoom(){
  role="audience";$("roomTag").textContent="ROOM "+room;subscribe();show("audience");
 }
 $("createHost").onclick=createRoom;$("joinAudience").onclick=joinRoom;
+function cleanTeamName(value,fallback){const name=String(value||"").trim().slice(0,24);return name||fallback}
+function saveTeamNames(){if(role!=="host"||!state)return;update({teamNames:[cleanTeamName($("teamName1").value,"Team 1"),cleanTeamName($("teamName2").value,"Team 2")]})}
+$("teamName1").addEventListener("change",saveTeamNames);$("teamName2").addEventListener("change",saveTeamNames);
 function update(patch){
  if(role!=="host"||!db)return;
  if(state)undoStack.push(JSON.parse(JSON.stringify(state)));
@@ -245,14 +250,14 @@ function render(){
  $("roundIntro").classList.toggle("hidden",state.screen!=="intro");
  $("liveGame").classList.toggle("hidden",state.screen==="intro"||state.screen==="final");
  $("finalScreen").classList.toggle("hidden",state.screen!=="final");
- if(state.screen==="final"){const a=state.scores?.[0]||0,b=state.scores?.[1]||0;$("winnerTitle").textContent=a===b?"IT'S A TIE!":a>b?"TEAM 1 WINS!":"TEAM 2 WINS!";$("finalScores").textContent=`Team 1: ${a} points  •  Team 2: ${b} points`;return}
+ if(state.screen==="final"){const a=state.scores?.[0]||0,b=state.scores?.[1]||0;const n=Array.isArray(state.teamNames)?state.teamNames:["Team 1","Team 2"];$("winnerTitle").textContent=a===b?"IT'S A TIE!":a>b?`${n[0]} WINS!`:`${n[1]} WINS!`;$("finalScores").textContent=`${n[0]}: ${a} points  •  ${n[1]}: ${b} points`;return}
  const r=rounds[state.roundIndex];if(!r)return;
  if(role==="host"){$("roundSelect").value=state.roundIndex;updateQuestionOptions();$("questionSelect").value=state.questionIndex;}
  $("roundNum").textContent="ROUND "+r.number;$("roundTitle").textContent=r.title.toUpperCase();
- $("score1").textContent=state.scores?.[0]||0;$("score2").textContent=state.scores?.[1]||0;
+ $("score1").textContent=state.scores?.[0]||0;$("score2").textContent=state.scores?.[1]||0;$("audienceTeam1").textContent=names[0];$("audienceTeam2").textContent=names[1];
  document.querySelectorAll(".scorebox").forEach((el,i)=>el.classList.toggle("active",i===(state.team||0)));
  $("team1").classList.toggle("activeTeam",(state.team||0)===0);$("team2").classList.toggle("activeTeam",(state.team||0)===1);
- $("strikeCount").textContent="✕ ".repeat(state.strikes||0)||"— — —";$("turnText").textContent=`Team ${(state.team||0)+1}'s turn`;
+ $("strikeCount").textContent="✕ ".repeat(state.strikes||0)||"— — —";$("turnText").textContent=`${names[state.team||0]}'s turn`;
  const q=current();if(!q){
   $("hostAnswerKey").classList.add("hidden");$("hostQuestionPreview").textContent="Round introduction is displayed.";
   if(role==="host")$("completionStatus").textContent="Question status: round introduction.";
